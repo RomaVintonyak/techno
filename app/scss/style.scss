@@ -1,5 +1,5 @@
 /*google foonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 /*==================*/
 /*normalize css https://necolas.github.io/normalize.css/ */
 @import "vendor/normalize.scss";
@@ -10,6 +10,9 @@
 //*mixins*//
 @import "./mixin.scss";
 /*main style*/
+*{
+  border: 0;
+}
 html{
   font-size: 10px;
   overflow-x: hidden;
@@ -17,18 +20,23 @@ html{
 body{
   font-family: $font;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   color: $black;
   margin: 0;
   padding: 0;
-  background-color: $white;
+  background-color: $background;
   overflow-x: hidden;
 }
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+nav,footer,header,aside{
+  display: block;
 }
 h1,
 h2,
@@ -37,57 +45,43 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-size: inherit;
+  font-weight: 400;
 }
 p {
   margin: 0;
+}
+img{
+  vertical-align: top;
+}
+input{
+  font-family: inherit;
+  &::-ms-clear{
+    display: none;
+  }
+}
+button{
+  font-family: inherit;
+  cursor: pointer;
+  &::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+  }
+}
+textarea{
+  font-family: inherit;
+}
+:focus{
+  outline: none;
+}
+:active{
+  outline: none;
 }
 a {
   &:focus {
     outline: none;
   }
-}/*==================*/
-/*normalize css https://necolas.github.io/normalize.css/ */
-@import "vendor/normalize.scss";
-//*variables*//
-@import "./var.scss";
-//*helpers class*//
-@import "./help.scss";
-//*mixins*//
-@import "./mixin.scss";
-/*main style*/
-html{
-  font-size: 10px;
-  overflow-x: hidden;
-}
-body{
-  font-family: $font;
-  font-size: 1.6rem;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  color: $black;
-  margin: 0;
-  padding: 0;
-  background-color: $white;
-  overflow-x: hidden;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-p {
-  margin: 0;
-}
-a {
-  &:focus {
+  &:active{
     outline: none;
   }
 }
@@ -96,8 +90,12 @@ a {
 @import "block/container.scss";
 /*header*/
 @import "block/header.scss";
-/*==============block=============*/
-/*container*/
-@import "block/container.scss";
-/*header*/
-//@import "block/header.scss";
+
+
+
+
+
+
+/*==============vendor=============*/
+/*slick slider*/
+//@import "vendor/slick.scss";
