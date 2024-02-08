@@ -480,5 +480,115 @@ a:active {
     background-color: #f10e34;
 }
 
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.nav__content--cat {
+    width: 26.1194%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__content--cat p {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__content--menu {
+    margin: 0;
+    padding: 0;
+    width: 63.43284%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu__item {
+    margin-right: 2rem;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__item--link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+}
+
+.menu__item--link:hover {
+    cursor: pointer;
+    color: #222222;
+}
+
+.menu__item .active {
+    color: #222222;
+}
+
+/*burger*/
+.burger__btn {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.burger__btn span {
+    position: absolute;
+    top: calc(50% - 0.1rem);
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #ffffff;
+    transition: background-color 0.2s linear;
+    transition: width 0.1s linear, transform 0.2s linear, background-color 0.2s linear;
+}
+
+.burger__btn span:first-child {
+    top: calc(25% - 0.1rem);
+}
+
+.burger__btn span:last-child {
+    top: calc(75% - 0.1rem);
+}
+
+.burger__btn:hover {
+    cursor: pointer;
+}
+
+.burger__btn:hover span {
+    background-color: #222222;
+}
+
+.burger__btn--active span:first-child {
+    width: 0;
+}
+
+.burger__btn--active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.burger__btn--active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.burger__btn--active span:last-child {
+    width: 0;
+}
+
 /*==============vendor=============*/
 /*slick slider*/

@@ -1,0 +1,47 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.burger__btn {
+   width: 2rem;
+   height: 2rem;
+   margin-right: 1rem;
+   position: relative;
+   span {
+      position: absolute;
+      top: calc(50% - 0.1rem);
+      display: block;
+      width: 100%;
+      height: 0.1rem;
+      background-color: $white;
+      transition: background-color 0.2s linear;
+      transition: width 0.1s linear, transform 0.2s linear, background-color 0.2s linear;
+      &:first-child {
+         top: calc(25% - 0.1rem);
+      }
+      &:last-child {
+         top: calc(75% - 0.1rem);
+      }
+   }
+   &:hover {
+      cursor: pointer;
+      span {
+         background-color: $black-l;
+      }
+   }
+   &--active {
+      span {
+         &:first-child{
+            width: 0;
+         }
+         &:nth-child(2) {
+            transform: rotate(45deg);
+         }
+         &:nth-child(3) {
+            transform: rotate(-45deg);
+         }
+         &:last-child{
+            width: 0;
+         }
+      }
+   }
+}
