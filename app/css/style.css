@@ -590,5 +590,74 @@ a:active {
     width: 0;
 }
 
+/*main*/
+.main {
+    width: 100%;
+}
+
+.main__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*aside*/
+.aside {
+    width: 26.1194%;
+}
+
+/*aside cat*/
+.aside__cat {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.aside__cat--item {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.aside__cat--item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 0.3rem;
+    color: #eaeaea;
+}
+
+.aside__cat--item a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #222222;
+    font-weight: 400;
+    transition: color 0.2s linear;
+}
+
+.aside__cat--item a:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+.aside__cat--item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    height: 0.1rem;
+    width: 96%;
+    background-color: #eaeaea;
+}
+
+.aside__cat--item:last-child:after {
+    display: none;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
