@@ -9,4 +9,7 @@
       justify-content: space-between;
       align-items: flex-start;
    }
+   &__content{
+      width: 900 / 1340 * 100%;
+   }
 }

@@ -8,6 +8,20 @@ jQuery(document).ready(function () {
       $(this).toggleClass("burger__btn--active");
     });
   }
-
+  /*intro slider*/
+  var introSlider = $("#introSlider");
+  introSlider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    swipe: false,
+    touchMove: false,
+    focusOnSelect: false,
+    fade: true,
+    draggable: false,
+  });
 
 });
