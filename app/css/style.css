@@ -748,6 +748,81 @@ a:active {
     font-weight: 400;
 }
 
+/*product*/
+.product__slider {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.product__slider--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 1rem;
+}
+
+.product__slider--title h3 {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product__slider--title .product__slider--buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__slider--title .product__slider--buttons button {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cacaca;
+    border: none;
+    transition: background-color 0.2s linear;
+}
+
+.product__slider--title .product__slider--buttons button:first-child {
+    margin-right: 0.5rem;
+}
+
+.product__slider--title .product__slider--buttons button:hover {
+    cursor: pointer;
+    background-color: #f10e34;
+}
+
+.product__slider--title .product__slider--buttons button i {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.product__item {
+    text-align: center;
+}
+
+.product__item--title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #222222;
+}
+
+.product__item--price {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

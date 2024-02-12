@@ -23,5 +23,26 @@ jQuery(document).ready(function () {
     fade: true,
     draggable: false,
   });
-
+  /*product slider*/
+  var productSlider = $("#productSlider");
+  productSlider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    swipe: false,
+    touchMove: false,
+    focusOnSelect: false,
+    fade: true,
+    draggable: false,
+  });
+  /*Custom navigation button product slider*/
+  $(".slider__button--prev").on("click", function(){
+    productSlider.slick("slickPrev");
+  });
+  $(".slider__button--next").on("click", function() {
+    productSlider.slick("slickNext");
+  });
 });

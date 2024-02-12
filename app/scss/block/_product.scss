@@ -1,0 +1,66 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.product__slider {
+   background-color: $white;
+   padding: 1rem;
+   &--title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem;
+      border-bottom: 1px solid $silver;
+      margin-bottom: 1rem;
+      h3 {
+         font-size: 1.5rem;
+         font-family: $font;
+         color: $black;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+      .product__slider--buttons {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         button {
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $silver-l;
+            border: none;
+            transition: background-color 0.2s linear;
+            &:first-child {
+               margin-right: 0.5rem;
+            }
+            &:hover {
+               cursor: pointer;
+               background-color: $red;
+            }
+            i {
+               color: $white;
+               font-size: 1.5rem;
+            }
+         }
+      }
+   }
+}
+.product__item {
+   text-align: center;
+   &--title {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-family: $font;
+      color: $black-l;
+   }
+   &--price {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: $font;
+      color: $black;
+   }
+}
