@@ -1,0 +1,56 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.subscribe {
+   background-color: $white;
+   padding: 1rem;
+   &__title {
+      display: flex;
+      align-items: center;
+      height: 4rem;
+      border-bottom: 1px solid $silver;
+      margin-bottom: 1rem;
+      h3 {
+         font-size: 1.5rem;
+         font-family: $font;
+         color: $black;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+   }
+   &__form {
+      p {
+         font-size: 1.5rem;
+         font-family: $font;
+         color: $black-l;
+         margin-bottom: 1rem;
+      }
+   }
+}
+.subscribe__form--form {
+   input {
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.5rem;
+      background-color: $silver-l;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-family: $font;
+      color: $black-l;
+   }
+   button {
+      border: 1px solid $red;
+      border-radius: 0.5rem;
+      padding: 0.6rem 2rem;
+      font-size: 1.5rem;
+      font-family: $font;
+      color: $black-l;
+      background-color: $red;
+      transition: background-color 0.2s linear, color 0.2s linear;
+      &:hover{
+         color: $red;
+         background-color: $white;
+      }
+   }
+}
