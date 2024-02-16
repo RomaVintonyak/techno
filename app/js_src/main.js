@@ -67,4 +67,5 @@ jQuery(document).ready(function () {
   $(".proposition__button--next").on("click", function () {
     propSlider.slick("slickNext");
   });
+  
 });

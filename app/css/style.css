@@ -957,6 +957,51 @@ a:active {
     color: #000000;
 }
 
+/*action*/
+.action__row {
+    position: relative;
+    width: 100%;
+}
+
+.action__row--title {
+    position: absolute;
+    z-index: 3;
+    left: 5%;
+    top: 30%;
+    width: 95%;
+}
+
+.action__row--title h3 {
+    font-size: 3rem;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.action__row--title p {
+    color: #222222;
+    margin: 0.3rem 0 2rem 0;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.action__row--title a {
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    border: 1px solid #f10e34;
+    color: #222222;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.action__row--title a:hover {
+    color: #ffffff;
+    background-color: #f10e34;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

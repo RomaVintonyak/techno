@@ -1,0 +1,45 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.action {
+   &__row {
+      position: relative;
+      width: 100%;
+      &--baner {
+      }
+      &--title {
+         position: absolute;
+         z-index: 3;
+         left: 5%;
+         top: 30%;
+         width: 95%;
+         h3 {
+            font-size: 3rem;
+            font-family: $font;
+            color: $black;
+            font-weight: bold;
+            text-transform: uppercase;
+         }
+         p {
+            color: $black-l;
+            margin: 0.3rem 0 2rem 0;
+            font-size: 2rem;
+            font-family: $font;
+            font-weight: bold;
+         }
+         a {
+            text-decoration: none;
+            padding: 1rem 0.5rem;
+            border: 1px solid $red;
+            color: $black-l;
+            font-size: 1.8rem;
+            font-weight: 700;
+            transition: color 0.2s linear, background-color 0.2s linear;
+            &:hover{
+               color: $white;
+               background-color: $red;
+            }
+         }
+      }
+   }
+}
