@@ -39,10 +39,32 @@ jQuery(document).ready(function () {
     draggable: false,
   });
   /*Custom navigation button product slider*/
-  $(".slider__button--prev").on("click", function(){
+  $(".slider__button--prev").on("click", function () {
     productSlider.slick("slickPrev");
   });
-  $(".slider__button--next").on("click", function() {
+  $(".slider__button--next").on("click", function () {
     productSlider.slick("slickNext");
+  });
+  /*proposition slider*/
+  var propSlider = $("#propositionSlider");
+  propSlider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    swipe: true,
+    touchMove: false,
+    focusOnSelect: false,
+    fade: false,
+    draggable: true,
+  });
+  $(".proposition__button--prev").on("click", function () {
+    propSlider.slick("slickPrev");
+  });
+  $(".proposition__button--next").on("click", function () {
+    propSlider.slick("slickNext");
   });
 });
