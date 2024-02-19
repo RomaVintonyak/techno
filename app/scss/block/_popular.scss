@@ -73,11 +73,11 @@
       font-size: 1.4rem;
       font-weight: 700;
       transition: color 0.2s linear, background-color 0.2s linear;
-      &:hover{
+      &:hover {
          background-color: $red;
          color: $white;
       }
-      &:active{
+      &:active {
          transform: scale(0.97);
       }
    }
