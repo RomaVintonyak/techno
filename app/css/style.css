@@ -1002,6 +1002,118 @@ a:active {
     background-color: #f10e34;
 }
 
+/*popular*/
+.popular {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.popular__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 2rem;
+}
+
+.popular__title h3 {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.popular__title .popular__title--button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular__title .popular__title--button button {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cacaca;
+    border: none;
+    transition: background-color 0.2s linear;
+}
+
+.popular__title .popular__title--button button:first-child {
+    margin-right: 0.5rem;
+}
+
+.popular__title .popular__title--button button:hover {
+    cursor: pointer;
+    background-color: #f10e34;
+}
+
+.popular__title .popular__title--button button i {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.popular__item {
+    text-align: center;
+}
+
+.popular__item--title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #222222;
+}
+
+.popular__item--price {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+}
+
+.popular__item--button {
+    padding: 0.8rem 0.4rem;
+    margin-top: 0.5rem;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.popular__item--button:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.popular__item--button:active {
+    transform: scale(0.97);
+}
+
+/*baner*/
+.baner {
+    padding: 1rem 0;
+    background-color: #f10e34;
+}
+
+.baner__row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.baner__row--item {
+    width: 15%;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

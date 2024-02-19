@@ -67,5 +67,26 @@ jQuery(document).ready(function () {
   $(".proposition__button--next").on("click", function () {
     propSlider.slick("slickNext");
   });
-  
+  /*popular slider*/
+  var popularSlider = $("#popularSlider");
+  popularSlider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    swipe: true,
+    touchMove: false,
+    focusOnSelect: false,
+    fade: false,
+    draggable: true,
+  });
+  $(".popular__button--prev").on("click", function(){
+    popularSlider.slick("slickPrev");
+  });
+  $(".popular__button--next").on("click", function(){
+    popularSlider.slick("slickNext");
+  });
 });

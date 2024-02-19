@@ -1,0 +1,84 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.popular {
+   background-color: $white;
+   padding: 1rem;
+   &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem;
+      border-bottom: 1px solid $silver;
+      margin-bottom: 2rem;
+      h3 {
+         font-size: 1.5rem;
+         font-family: $font;
+         color: $black;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+      .popular__title--button {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         button {
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $silver-l;
+            border: none;
+            transition: background-color 0.2s linear;
+            &:first-child {
+               margin-right: 0.5rem;
+            }
+            &:hover {
+               cursor: pointer;
+               background-color: $red;
+            }
+            i {
+               color: $white;
+               font-size: 1.5rem;
+            }
+         }
+      }
+   }
+}
+.popular__item {
+   text-align: center;
+   &--title {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-family: $font;
+      color: $black-l;
+   }
+   &--price {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: $font;
+      color: $black;
+   }
+   &--button {
+      padding: 0.8rem 0.4rem;
+      margin-top: 0.5rem;
+      font-family: $font;
+      border: 1px solid $red;
+      background-color: $white;
+      color: $black-l;
+      font-size: 1.4rem;
+      font-weight: 700;
+      transition: color 0.2s linear, background-color 0.2s linear;
+      &:hover{
+         background-color: $red;
+         color: $white;
+      }
+      &:active{
+         transform: scale(0.97);
+      }
+   }
+}
