@@ -1114,6 +1114,231 @@ a:active {
     width: 15%;
 }
 
+/*footer*/
+.footer {
+    background-color: #222222;
+    padding: 3rem 0;
+}
+
+.footer__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__description {
+    width: 22%;
+}
+
+.footer__description--logo {
+    margin-bottom: 1rem;
+}
+
+.footer__description p {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer__description--adress {
+    margin-bottom: 1rem;
+}
+
+.footer__description--adress i {
+    color: #ffffff;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.footer__description--adress span {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer__description--phone {
+    margin-bottom: 1rem;
+}
+
+.footer__description--phone i {
+    color: #ffffff;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.footer__description--phone a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.1s linear;
+}
+
+.footer__description--phone a:hover {
+    color: #f10e34;
+}
+
+.footer__description--mail i {
+    color: #ffffff;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.footer__description--mail a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.1s linear;
+}
+
+.footer__description--mail a:hover {
+    color: #f10e34;
+}
+
+.footer__menu {
+    width: 22%;
+}
+
+.footer__menu h3 {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__menu ul li {
+    margin-bottom: 1rem;
+}
+
+.footer__menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer__menu ul li a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.1s linear;
+}
+
+.footer__menu ul li a:hover {
+    color: #f10e34;
+}
+
+.footer__social {
+    width: 22%;
+}
+
+.footer__social h3 {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer__social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__social ul li {
+    margin-bottom: 1rem;
+}
+
+.footer__social ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer__social ul li a {
+    text-decoration: none;
+}
+
+.footer__social ul li a i {
+    color: #ffffff;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.1s linear;
+}
+
+.footer__social ul li a span {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.1s linear;
+}
+
+.footer__social ul li a:hover i {
+    color: #f10e34;
+}
+
+.footer__social ul li a:hover span {
+    color: #f10e34;
+}
+
+.footer__time {
+    width: 22%;
+}
+
+.footer__time h3 {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer__time--grafik {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__time--grafik i {
+    margin-right: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.footer__time--grafik div p {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer__time--payment {
+    display: flex;
+}
+
+.footer__time--payment div {
+    margin-right: 1rem;
+}
+
+.footer__time--payment div:last-child {
+    margin-right: 0;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {
