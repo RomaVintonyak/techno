@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
   "use script";
+  //constant
+  const headerHeight = $("#header").height();
   /*burger button*/
   var wWidth = $(window).width();
   var burgerBtn = $(".burger__btn");
@@ -83,10 +85,27 @@ jQuery(document).ready(function () {
     fade: false,
     draggable: true,
   });
-  $(".popular__button--prev").on("click", function(){
+  $(".popular__button--prev").on("click", function () {
     popularSlider.slick("slickPrev");
   });
-  $(".popular__button--next").on("click", function(){
+  $(".popular__button--next").on("click", function () {
     popularSlider.slick("slickNext");
+  });
+  /*back to top script*/
+  var backTopBtn = $(".back__top");
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > (headerHeight)) {
+      backTopBtn.css({
+        bottom: 0
+      });
+    } else {
+      backTopBtn.removeAttr("style");
+    }
+  });
+  backTopBtn.on("click", function (event) {
+    event.preventDefault();
+    $("html, body").animate({
+      scrollTop: 0
+    }, 1000, "swing");
   });
 });

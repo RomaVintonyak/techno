@@ -1,0 +1,45 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.back__top {
+   position: fixed;
+   z-index: 1500;
+   bottom: -3.5rem;
+   right: 1%;
+   width: 3.5rem;
+   height: 3.5rem;
+   background-color: $silver-l;
+   border: 1px solid $silver-l;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.2s linear, border-color 0.2s linear, bottom 0.3s linear;
+   &--content {
+      animation: zoom 1s linear 0s infinite alternate;
+      i {
+         color: $red;
+         font-size: 2rem;
+         transition: color 0.2s linear;
+      }
+   }
+   &:hover {
+      cursor: pointer;
+      background-color: $red;
+      border-color: $red;
+      i {
+         color: $white;
+      }
+   }
+}
+
+@keyframes zoom {
+   0% {
+      transform: scale(0.93);
+   }
+   50% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(1.07);
+   }
+}
