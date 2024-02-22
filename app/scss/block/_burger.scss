@@ -22,15 +22,17 @@
          top: calc(75% - 0.1rem);
       }
    }
-   &:hover {
-      cursor: pointer;
-      span {
-         background-color: $black-l;
+   @include tablet {
+      &:hover {
+         cursor: pointer;
+         span {
+            background-color: $black-l;
+         }
       }
    }
    &--active {
       span {
-         &:first-child{
+         &:first-child {
             width: 0;
          }
          &:nth-child(2) {
@@ -39,7 +41,7 @@
          &:nth-child(3) {
             transform: rotate(-45deg);
          }
-         &:last-child{
+         &:last-child {
             width: 0;
          }
       }
