@@ -136,4 +136,14 @@ jQuery(document).ready(function () {
       });
     }
   });
+  /*progres line*/
+  $(window).on("scroll resize", function(){
+    var docHeight = $(document).height();
+    var windowHeight = $(window).height();
+    var scrolTop = $(window).scrollTop();
+    var progress = scrolTop / (docHeight - windowHeight);
+    $("#progressBlock").css({
+      width: ((100 * progress | 0)) + "%"
+    });
+  });
 });

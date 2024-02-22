@@ -368,6 +368,24 @@ a:active {
     margin: 0 auto;
 }
 
+/*progres line*/
+.progress__block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1501;
+    width: 0;
+    height: 2px;
+    transition: width 0.1s linear;
+}
+
+.load__line {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
 /*header*/
 .header {
     width: 100%;
@@ -964,6 +982,27 @@ a:active {
     font-weight: 700;
     font-family: "Lato", sans-serif;
     color: #000000;
+}
+
+.proposition__item--button {
+    padding: 0.8rem 0.4rem;
+    margin-top: 0.5rem;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.proposition__item--button:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.proposition__item--button:active {
+    transform: scale(0.97);
 }
 
 /*action*/
