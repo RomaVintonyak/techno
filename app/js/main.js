@@ -1,3 +1,12 @@
+/*preloader script*/
+$(window).on("load", function () {
+  var preloader = $("#loader");
+  var timeDelay = 1500;
+  setTimeout(function () {
+    $("body").removeAttr("style");
+    preloader.addClass("loader--done");
+  }, timeDelay);
+});
 jQuery(document).ready(function () {
   "use script";
   //constant
@@ -9,7 +18,7 @@ jQuery(document).ready(function () {
       burgerBtn.on("click", function () {
         $(this).toggleClass("burger__btn--active");
       });
-    }else{
+    } else {
       burgerBtn.removeClass("burger__btn--active");
     }
   });
@@ -137,13 +146,13 @@ jQuery(document).ready(function () {
     }
   });
   /*progres line*/
-  $(window).on("scroll resize", function(){
+  $(window).on("scroll resize", function () {
     var docHeight = $(document).height();
     var windowHeight = $(window).height();
     var scrolTop = $(window).scrollTop();
     var progress = scrolTop / (docHeight - windowHeight);
     $("#progressBlock").css({
-      width: ((100 * progress | 0)) + "%"
+      width: ((100 * progress) | 0) + "%"
     });
   });
 });

@@ -15,7 +15,7 @@
 }
 html{
   font-size: 10px;
-  overflow-x: hidden;
+  user-select: none;
 }
 body{
   font-family: $font;
@@ -88,6 +88,8 @@ a {
 /*==============block=============*/
 /*container*/
 @import "block/container.scss";
+/*preloader*/
+@import "block/loader.scss";
 /*progres line*/
 @import "block/progresLine.scss";
 /*header*/
