@@ -155,4 +155,20 @@ jQuery(document).ready(function () {
       width: ((100 * progress) | 0) + "%"
     });
   });
+  /*page about slider*/
+  var aboutSliderPage = $("#aboutSlider");
+  aboutSliderPage.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    swipe: false,
+    touchMove: false,
+    focusOnSelect: false,
+    fade: true,
+    draggable: false,
+  });
 });
