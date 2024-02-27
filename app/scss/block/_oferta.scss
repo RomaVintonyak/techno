@@ -1,0 +1,105 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.main {
+   margin-top: 4rem;
+   margin-bottom: 2rem;
+   @include tablet {
+      margin-top: 2rem;
+   }
+   &__title {
+      text-align: center;
+      h1 {
+         text-transform: uppercase;
+         font-family: $font;
+         color: $black;
+         font-size: 2.8rem;
+         font-weight: 700;
+         border-bottom: 2px solid $red;
+         display: inline;
+      }
+   }
+}
+.oferta {
+   margin-bottom: 2rem;
+   &__title {
+      margin-bottom: 2rem;
+      h2 {
+         font-size: 2rem;
+         font-weight: 700;
+         color: $black;
+         font-family: $font;
+         margin-bottom: 1rem;
+      }
+      h3 {
+         font-size: 2rem;
+         font-weight: 400;
+         color: $black;
+         font-family: $font;
+      }
+   }
+   &__text {
+      p {
+         font-size: 1.7rem;
+         font-weight: 400;
+         color: $black;
+         font-family: $font;
+         a {
+            text-decoration: none;
+            color: $red;
+         }
+      }
+   }
+}
+.oferta__block {
+   margin-bottom: 2rem;
+   &--title {
+      margin-bottom: 2rem;
+      span {
+         font-family: $font;
+         color: $black;
+         font-weight: 400;
+         font-size: 2rem;
+         display: inline-block;
+         margin-right: 0.5rem;
+      }
+      p {
+         display: inline-block;
+         font-family: $font;
+         color: $black;
+         font-weight: 400;
+         font-size: 2rem;
+      }
+   }
+   &--list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      counter-reset: li;
+      li {
+         margin-bottom: 1rem;
+         position: relative;
+         p {
+            font-size: 1.7rem;
+            font-weight: 400;
+            font-family: $font;
+            color: $black;
+            margin-left: 2rem;
+            a {
+               text-decoration: none;
+               color: $red;
+            }
+         }
+         &:last-child {
+            margin-bottom: 0;
+         }
+         &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            counter-increment: li ;
+            content: counters(li, ".") ". ";
+         }
+      }
+   }
+}
