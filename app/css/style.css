@@ -1702,7 +1702,7 @@ a:active {
 }
 
 .oferta__block {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .oferta__block--title {
@@ -1730,12 +1730,10 @@ a:active {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    counter-reset: li;
 }
 
 .oferta__block--list li {
     margin-bottom: 1rem;
-    position: relative;
 }
 
 .oferta__block--list li p {
@@ -1743,7 +1741,7 @@ a:active {
     font-weight: 400;
     font-family: "Lato", sans-serif;
     color: #000000;
-    margin-left: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .oferta__block--list li p a {
@@ -1751,16 +1749,38 @@ a:active {
     color: #f10e34;
 }
 
+.oferta__block--list li p:last-child {
+    margin-bottom: 0;
+}
+
 .oferta__block--list li:last-child {
     margin-bottom: 0;
 }
 
-.oferta__block--list li:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    counter-increment: li;
-    content: counters(li, ".") ". ";
+/*obmin ta povernennya*/
+.obmin {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+    .obmin {
+        margin-top: 2rem;
+    }
+}
+
+.obmin__title {
+    text-align: center;
+}
+
+.obmin__title--title h1 {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-bottom: 2px solid #f10e34;
+    display: inline;
 }
 
 /*==============vendor=============*/

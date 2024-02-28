@@ -52,7 +52,7 @@
    }
 }
 .oferta__block {
-   margin-bottom: 2rem;
+   margin-bottom: 3rem;
    &--title {
       margin-bottom: 2rem;
       span {
@@ -75,30 +75,24 @@
       margin: 0;
       padding: 0;
       list-style-type: none;
-      counter-reset: li;
       li {
          margin-bottom: 1rem;
-         position: relative;
          p {
             font-size: 1.7rem;
             font-weight: 400;
             font-family: $font;
             color: $black;
-            margin-left: 2rem;
+            margin-bottom: 0.5rem;
             a {
                text-decoration: none;
                color: $red;
             }
+            &:last-child {
+               margin-bottom: 0;
+            }
          }
          &:last-child {
             margin-bottom: 0;
-         }
-         &:before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            counter-increment: li ;
-            content: counters(li, ".") ". ";
          }
       }
    }
