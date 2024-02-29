@@ -1783,6 +1783,94 @@ a:active {
     display: inline;
 }
 
+.obmin__block {
+    margin: 4rem 0;
+}
+
+.obmin__block--reverse .obmin__block--row {
+    flex-direction: row-reverse;
+}
+
+.obmin__block--row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .obmin__block {
+        margin: 2rem 0;
+    }
+}
+
+.block__text {
+    width: 65%;
+}
+
+.block__text--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.block__text--title span {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #cacaca;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block__text--title span i {
+    color: #f10e34;
+    font-size: 2.2rem;
+}
+
+.block__text--title p {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.block__text--text p {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.block__icon {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.block__icon span i {
+    color: #f10e34;
+    font-size: 10rem;
+}
+
+.obmin__line {
+    text-align: center;
+}
+
+.obmin__line--row {
+    padding: 2rem;
+    border: 1px solid #f10e34;
+}
+
+.obmin__line--row p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

@@ -22,3 +22,80 @@
       }
    }
 }
+.obmin__block {
+   margin: 4rem 0;
+   &--reverse {
+      .obmin__block--row {
+         flex-direction: row-reverse;
+      }
+   }
+   &--row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+   @include tablet {
+      margin: 2rem 0;
+   }
+}
+.block__text {
+   width: 65%;
+   &--title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      span {
+         margin-right: 1rem;
+         width: 4rem;
+         height: 4rem;
+         background-color: $silver-l;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         i {
+            color: $red;
+            font-size: 2.2rem;
+         }
+      }
+      p {
+         color: $black;
+         font-family: $font;
+         font-size: 2rem;
+         font-weight: 400;
+         text-transform: uppercase;
+      }
+   }
+   &--text {
+      p {
+         color: $black;
+         font-family: $font;
+         font-size: 1.7rem;
+         font-weight: 400;
+      }
+   }
+}
+.block__icon {
+   width: 25%;
+   display: flex;
+   justify-content: center;
+   span {
+      i {
+         color: $red;
+         font-size: 10rem;
+      }
+   }
+}
+.obmin__line {
+   text-align: center;
+   &--row{
+      padding: 2rem;
+      border: 1px solid $red;
+      p{
+         font-size: 2rem;
+         font-weight: 400;
+         color: $black;
+         font-family: $font;
+      }
+   }
+}
