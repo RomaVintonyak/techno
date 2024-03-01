@@ -99,3 +99,15 @@
       }
    }
 }
+.block__tex{
+   margin-top: 1rem;
+   p{
+      color: $black;
+      font-family: $font;
+      font-size: 1.7rem;
+      font-weight: 400;
+      &:last-child{
+         margin-top: 1rem;
+      }
+   }
+}

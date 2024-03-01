@@ -1,13 +1,13 @@
 //*mixins*//
 @import "./mixin.scss";
 
-.main {
+.main__oferta {
    margin-top: 4rem;
    margin-bottom: 2rem;
    @include tablet {
       margin-top: 2rem;
    }
-   &__title {
+   &--title {
       text-align: center;
       h1 {
          text-transform: uppercase;

@@ -1641,22 +1641,22 @@ a:active {
 }
 
 /*public oferta*/
-.main {
+.main__oferta {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
 @media (max-width: 991px) {
-    .main {
+    .main__oferta {
         margin-top: 2rem;
     }
 }
 
-.main__title {
+.main__oferta--title {
     text-align: center;
 }
 
-.main__title h1 {
+.main__oferta--title h1 {
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     color: #000000;
@@ -1869,6 +1869,196 @@ a:active {
     font-weight: 400;
     color: #000000;
     font-family: "Lato", sans-serif;
+}
+
+.block__tex {
+    margin-top: 1rem;
+}
+
+.block__tex p {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.block__tex p:last-child {
+    margin-top: 1rem;
+}
+
+/*dostavka ta oplata*/
+.dostavka {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+    .dostavka {
+        margin-top: 2rem;
+    }
+}
+
+.dostavka__title {
+    text-align: center;
+}
+
+.dostavka__title--title h1 {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-bottom: 2px solid #f10e34;
+    display: inline;
+}
+
+.dostavka__post {
+    margin: 2rem 0;
+}
+
+.dostavka__post--title {
+    border-left: 2px solid #f10e34;
+    padding-left: 1rem;
+}
+
+.dostavka__post--title h3 {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.dostavka__post--title h3 span {
+    color: #f10e34;
+}
+
+.dostavka__post--img {
+    margin-top: 2rem;
+}
+
+.dostavka__post--img img {
+    border: 1px solid #f10e34;
+}
+
+.title__post--row {
+    display: flex;
+    align-items: center;
+}
+
+.title__post--row span {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #cacaca;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__post--row span i {
+    color: #f10e34;
+    font-size: 2.2rem;
+}
+
+.title__post--row p {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.image__post {
+    margin: 2rem 0;
+}
+
+.image__post--row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.image__post--row .row__text {
+    width: 65%;
+}
+
+.image__post--row .row__text--title {
+    margin-bottom: 2rem;
+    border-left: 2px solid #f10e34;
+    padding-left: 1rem;
+}
+
+.image__post--row .row__text--title h3 {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.image__post--row .row__text--text p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.image__post--row .row__img {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.image__post--row .row__img span i {
+    color: #f10e34;
+    font-size: 10rem;
+}
+
+.pay__post {
+    margin: 2rem 0;
+}
+
+.pay__post--row .pay__post--title {
+    margin-bottom: 2rem;
+    border-left: 2px solid #f10e34;
+    padding-left: 1rem;
+}
+
+.pay__post--row .pay__post--title h3 {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.pay__post--row .pay__post--block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.block__item {
+    border: 1px solid #f10e34;
+    width: 12%;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.block__item span i {
+    color: #f10e34;
+    font-size: 4rem;
+}
+
+.block__item p {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
 }
 
 /*==============vendor=============*/

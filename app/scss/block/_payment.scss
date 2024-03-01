@@ -1,0 +1,158 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.dostavka {
+   margin-top: 4rem;
+   margin-bottom: 2rem;
+   @include tablet {
+      margin-top: 2rem;
+   }
+   &__title {
+      text-align: center;
+      &--title {
+         h1 {
+            text-transform: uppercase;
+            font-family: $font;
+            color: $black;
+            font-size: 2.8rem;
+            font-weight: 700;
+            border-bottom: 2px solid $red;
+            display: inline;
+         }
+      }
+   }
+}
+.dostavka__post {
+   margin: 2rem 0;
+   &--title {
+      border-left: 2px solid $red;
+      padding-left: 1rem;
+      h3 {
+         color: $black;
+         font-family: $font;
+         font-weight: 700;
+         font-size: 2.5rem;
+         text-transform: uppercase;
+         span {
+            color: $red;
+         }
+      }
+   }
+   &--img {
+      margin-top: 2rem;
+      img {
+         border: 1px solid $red;
+      }
+   }
+}
+.title__post {
+   &--row {
+      display: flex;
+      align-items: center;
+      span {
+         margin-right: 1rem;
+         width: 4rem;
+         height: 4rem;
+         background-color: $silver-l;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         i {
+            color: $red;
+            font-size: 2.2rem;
+         }
+      }
+      p {
+         color: $black;
+         font-family: $font;
+         font-size: 2rem;
+         font-weight: 400;
+         text-transform: uppercase;
+      }
+   }
+}
+.image__post {
+   margin: 2rem 0;
+   &--row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .row__text {
+         width: 65%;
+         &--title {
+            margin-bottom: 2rem;
+            border-left: 2px solid $red;
+            padding-left: 1rem;
+            h3 {
+               color: $black;
+               font-family: $font;
+               font-weight: 700;
+               font-size: 2.5rem;
+               text-transform: uppercase;
+            }
+         }
+         &--text {
+            p {
+               font-family: $font;
+               font-weight: 400;
+               color: $black;
+               font-size: 1.7rem;
+            }
+         }
+      }
+      .row__img {
+         width: 25%;
+         display: flex;
+         justify-content: center;
+         span {
+            i {
+               color: $red;
+               font-size: 10rem;
+            }
+         }
+      }
+   }
+}
+.pay__post {
+   margin: 2rem 0;
+   &--row {
+      .pay__post--title {
+         margin-bottom: 2rem;
+         border-left: 2px solid $red;
+         padding-left: 1rem;
+         h3 {
+            color: $black;
+            font-family: $font;
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+         }
+      }
+      .pay__post--block {
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-between;
+      }
+   }
+}
+.block__item {
+   border: 1px solid $red;
+   width: 12%;
+   padding: 3rem 0;
+   text-align: center;
+   span {
+      i {
+         color: $red;
+         font-size: 4rem;
+      }
+   }
+   p {
+      color: $black;
+      font-family: $font;
+      font-weight: 400;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      margin-top: 1rem;
+   }
+}
