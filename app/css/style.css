@@ -2061,6 +2061,276 @@ a:active {
     margin-top: 1rem;
 }
 
+/*contact page*/
+.contact__title {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 991px) {
+    .contact__title {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__title {
+        margin-bottom: 2rem;
+    }
+}
+
+.contact__title--title {
+    text-align: center;
+}
+
+.contact__title h1 {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-bottom: 2px solid #f10e34;
+    display: inline;
+}
+
+.contact__block {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 991px) {
+    .contact__block {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__block {
+        margin-bottom: 2rem;
+    }
+}
+
+.contact__block--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact__address {
+    width: 46%;
+}
+
+.contact__address--line {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact__address--line:last-child {
+    margin-bottom: 0;
+}
+
+.contact__address--line i {
+    color: #f10e34;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.contact__address--line span {
+    color: #000000;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+}
+
+.contact__form {
+    width: 46%;
+}
+
+.contact__form--block {
+    width: 100%;
+    position: relative;
+    margin-bottom: 4.5rem;
+}
+
+.contact__form--block i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.5rem;
+    color: #f10e34;
+}
+
+.contact__form--block input {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 93%;
+    height: 3.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #cacaca;
+}
+
+.contact__form--block input:focus {
+    outline: none;
+    border-bottom-color: #f10e34;
+}
+
+@media (max-width: 768px) {
+    .contact__form--block input {
+        font-size: 1.6rem;
+    }
+}
+
+.contact__form--block label {
+    position: relative;
+    top: -1rem;
+    left: 9%;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    transition: font-size 0.1s linear, top 0.1s linear;
+}
+
+.contact__form--block textarea {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 93%;
+    height: 4rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #cacaca;
+    resize: none;
+}
+
+.contact__form--block textarea:focus {
+    outline: none;
+    border-bottom-color: #f10e34;
+}
+
+@media (max-width: 768px) {
+    .contact__form--block textarea {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__form--block {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.contact__form--button {
+    margin-bottom: 1.5rem;
+}
+
+.contact__form--button button {
+    border: none;
+    background-color: transparent;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    color: #000000;
+    font-weight: 400;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #cacaca;
+    border: 1px solid #cacaca;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.contact__form--button button i {
+    margin-left: 0.5rem;
+    color: #000000;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.contact__form--button button:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact__form--button button:hover i {
+    color: #ffffff;
+}
+
+.contact__form--button button:active {
+    transform: scale(0.97);
+}
+
+@media (max-width: 991px) {
+    .contact__form--button {
+        margin-bottom: 1rem;
+    }
+}
+
+.error__text {
+    width: 100%;
+    height: 2.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #f10e34;
+}
+
+#name:focus ~ label[for="name"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#email:focus ~ label[for="email"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#phone:focus ~ label[for="phone"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#message:focus ~ label[for="message"] {
+    font-size: 1.2rem;
+    top: -3.5rem;
+}
+
+.contact__line {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 991px) {
+    .contact__line {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__line {
+        margin-bottom: 2rem;
+    }
+}
+
+.contact__line--line {
+    width: 100%;
+    height: 0.1rem;
+}
+
+.contact__line--line hr {
+    background-color: #f10e34;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {
