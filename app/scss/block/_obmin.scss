@@ -2,12 +2,9 @@
 @import "./mixin.scss";
 
 .obmin {
-   margin-top: 4rem;
-   margin-bottom: 2rem;
-   @include tablet {
-      margin-top: 2rem;
-   }
+   margin-bottom: 4rem;
    &__title {
+      margin-top: 4rem;
       text-align: center;
       &--title {
          h1 {

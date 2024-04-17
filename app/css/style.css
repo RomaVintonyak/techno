@@ -596,7 +596,6 @@ a:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
     width: 100%;
 }
 
@@ -626,12 +625,12 @@ a:active {
     width: 67.16418%;
     list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    height: 4rem;
 }
 
 .menu__item {
     margin-right: 2rem;
+    transition: background-color 0.2s linear;
 }
 
 .menu__item:last-child {
@@ -639,6 +638,12 @@ a:active {
 }
 
 .menu__item--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: "Lato", sans-serif;
@@ -648,12 +653,16 @@ a:active {
     transition: color 0.2s linear;
 }
 
-.menu__item--link:hover {
-    cursor: pointer;
+.menu__item .active {
     color: #222222;
 }
 
-.menu__item .active {
+.menu__item:hover {
+    background-color: #f3f3f3;
+}
+
+.menu__item:hover a {
+    cursor: pointer;
     color: #222222;
 }
 
@@ -746,6 +755,7 @@ a:active {
     display: flex;
     align-items: center;
     position: relative;
+    transition: background-color 0.1s linear;
 }
 
 .aside__cat--item i {
@@ -753,20 +763,24 @@ a:active {
     margin-right: 1rem;
     margin-left: 0.3rem;
     color: #eaeaea;
+    transition: color 0.1s linear;
 }
 
 .aside__cat--item a {
+    display: block;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
+    line-height: 4rem;
     font-family: "Lato", sans-serif;
     color: #222222;
     font-weight: 400;
-    transition: color 0.2s linear;
+    transition: color 0.1s linear;
 }
 
 .aside__cat--item a:hover {
     cursor: pointer;
-    color: #000000;
 }
 
 .aside__cat--item:after {
@@ -781,6 +795,22 @@ a:active {
 
 .aside__cat--item:last-child:after {
     display: none;
+}
+
+.aside__cat--item:hover {
+    background-color: #f10e34;
+}
+
+.aside__cat--item:hover i {
+    color: #ffffff;
+}
+
+.aside__cat--item:hover a {
+    color: #ffffff;
+}
+
+.aside__cat--item:hover:after {
+    background-color: #f10e34;
 }
 
 /*intro*/
@@ -1554,20 +1584,40 @@ a:active {
 }
 
 /*about us*/
+.about {
+    margin-top: 2rem;
+}
+
 .about__row--title {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .about__row--title h3 {
+    text-transform: uppercase;
     font-family: "Lato", sans-serif;
-    font-size: 2.8rem;
-    font-weight: 700;
     color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.about__row--line {
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0 6rem 0;
+}
+
+.about__row--line hr {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f10e34;
 }
 
 .about__row--text {
     margin-bottom: 2rem;
+    border: 1px solid #f10e34;
+    padding: 2rem;
 }
 
 .about__row--text p {
@@ -1586,7 +1636,6 @@ a:active {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 2rem;
 }
 
 .content__slider {
@@ -1759,17 +1808,11 @@ a:active {
 
 /*obmin ta povernennya*/
 .obmin {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-@media (max-width: 991px) {
-    .obmin {
-        margin-top: 2rem;
-    }
+    margin-bottom: 4rem;
 }
 
 .obmin__title {
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -1887,18 +1930,8 @@ a:active {
 }
 
 /*dostavka ta oplata*/
-.dostavka {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-@media (max-width: 991px) {
-    .dostavka {
-        margin-top: 2rem;
-    }
-}
-
 .dostavka__title {
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -1906,7 +1939,7 @@ a:active {
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     color: #000000;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     border-bottom: 2px solid #f10e34;
     display: inline;
@@ -1925,7 +1958,7 @@ a:active {
     color: #000000;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -1959,13 +1992,13 @@ a:active {
 
 .title__post--row span i {
     color: #f10e34;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 .title__post--row p {
     color: #000000;
     font-family: "Lato", sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -1981,7 +2014,7 @@ a:active {
 }
 
 .image__post--row .row__text {
-    width: 65%;
+    width: 70%;
 }
 
 .image__post--row .row__text--title {
@@ -1994,7 +2027,7 @@ a:active {
     color: #000000;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -2030,7 +2063,7 @@ a:active {
     color: #000000;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -2042,14 +2075,14 @@ a:active {
 
 .block__item {
     border: 1px solid #f10e34;
-    width: 12%;
+    width: 18%;
     padding: 3rem 0;
     text-align: center;
 }
 
 .block__item span i {
     color: #f10e34;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 .block__item p {

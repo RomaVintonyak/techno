@@ -2,19 +2,15 @@
 @import "./mixin.scss";
 
 .dostavka {
-   margin-top: 4rem;
-   margin-bottom: 2rem;
-   @include tablet {
-      margin-top: 2rem;
-   }
    &__title {
+      margin-top: 2rem;
       text-align: center;
       &--title {
          h1 {
             text-transform: uppercase;
             font-family: $font;
             color: $black;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
             border-bottom: 2px solid $red;
             display: inline;
@@ -31,7 +27,7 @@
          color: $black;
          font-family: $font;
          font-weight: 700;
-         font-size: 2.5rem;
+         font-size: 2rem;
          text-transform: uppercase;
          span {
             color: $red;
@@ -60,13 +56,13 @@
          justify-content: center;
          i {
             color: $red;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
          }
       }
       p {
          color: $black;
          font-family: $font;
-         font-size: 2rem;
+         font-size: 1.7rem;
          font-weight: 400;
          text-transform: uppercase;
       }
@@ -79,7 +75,7 @@
       align-items: flex-start;
       justify-content: space-between;
       .row__text {
-         width: 65%;
+         width: 70%;
          &--title {
             margin-bottom: 2rem;
             border-left: 2px solid $red;
@@ -88,7 +84,7 @@
                color: $black;
                font-family: $font;
                font-weight: 700;
-               font-size: 2.5rem;
+               font-size: 2rem;
                text-transform: uppercase;
             }
          }
@@ -125,7 +121,7 @@
             color: $black;
             font-family: $font;
             font-weight: 700;
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-transform: uppercase;
          }
       }
@@ -138,13 +134,13 @@
 }
 .block__item {
    border: 1px solid $red;
-   width: 12%;
+   width: 18%;
    padding: 3rem 0;
    text-align: center;
    span {
       i {
          color: $red;
-         font-size: 4rem;
+         font-size: 2.5rem;
       }
    }
    p {

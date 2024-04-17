@@ -13,25 +13,30 @@
       display: flex;
       align-items: center;
       position: relative;
+      transition: background-color 0.1s linear;
       i {
          font-size: 1.5rem;
          margin-right: 1rem;
          margin-left: 0.3rem;
          color: $silver;
+         transition: color 0.1s linear;
       }
       a {
+         display: block;
+         height: 100%;
+         width: 100%;
          text-decoration: none;
          font-size: 1.5rem;
+         line-height: 4rem;
          font-family: $font;
          color: $black-l;
          font-weight: 400;
-         transition: color 0.2s linear;
-         &:hover{
+         transition: color 0.1s linear;
+         &:hover {
             cursor: pointer;
-            color: $black;
          }
       }
-      &:after{
+      &:after {
          content: ("");
          position: absolute;
          bottom: 0;
@@ -40,9 +45,21 @@
          width: 96%;
          background-color: $silver;
       }
-      &:last-child{
-         &:after{
+      &:last-child {
+         &:after {
             display: none;
+         }
+      }
+      &:hover {
+         background-color: $red;
+         i {
+            color: $white;
+         }
+         a {
+            color: $white;
+         }
+         &:after {
+            background-color: $red;
          }
       }
    }
