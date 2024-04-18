@@ -1,7 +1,7 @@
 /*preloader script*/
 $(window).on("load", function () {
   var preloader = $("#loader");
-  var timeDelay = 1500;
+  var timeDelay = 1000;
   setTimeout(function () {
     $("body").removeAttr("style");
     preloader.addClass("loader--done");
