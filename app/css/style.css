@@ -1585,7 +1585,7 @@ a:active {
 
 /*about us*/
 .about {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .about__row--title {
@@ -1931,7 +1931,7 @@ a:active {
 
 /*dostavka ta oplata*/
 .dostavka__title {
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -2075,14 +2075,14 @@ a:active {
 
 .block__item {
     border: 1px solid #f10e34;
-    width: 18%;
+    width: 13%;
     padding: 3rem 0;
     text-align: center;
 }
 
 .block__item span i {
     color: #f10e34;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .block__item p {
