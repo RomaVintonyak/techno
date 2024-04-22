@@ -954,25 +954,6 @@ a:active {
     font-size: 1.5rem;
 }
 
-.product__item {
-    text-align: center;
-}
-
-.product__item--title {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-family: "Lato", sans-serif;
-    color: #222222;
-}
-
-.product__item--price {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    color: #000000;
-}
-
 /*subscribe*/
 .subscribe {
     background-color: #ffffff;
@@ -2382,6 +2363,196 @@ a:active {
 .error__block a:hover {
     cursor: pointer;
     color: #000000;
+}
+
+/*catalog page*/
+.catalog__block {
+    width: 67.16418%;
+    margin-top: 2rem;
+}
+
+.catalog__block--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog__block--title .catalog__title h2 {
+    font-weight: 700;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+}
+
+.catalog__block--title .catalog__sort {
+    border: 1px solid #cacaca;
+    display: flex;
+}
+
+.catalog__block--title .catalog__sort input {
+    display: none;
+}
+
+.catalog__block--title .catalog__sort input:checked + label {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.catalog__block--title .catalog__sort label {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.7rem;
+    background-color: #eaeaea;
+}
+
+.catalog__block--title .catalog__sort label:nth-child(4) {
+    border-right: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+}
+
+.catalog__block--title .catalog__sort label:hover {
+    cursor: pointer;
+}
+
+.catalog__block--content {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.product__card {
+    width: 30%;
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid transparent;
+    background-color: #eaeaea;
+    transition: box-shadow 0.2s linear, border 0.21s linear;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.product__card--img {
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.product__card--img a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.product__card--img a picture img {
+    transition: transform 0.2s linear;
+}
+
+.product__card--title {
+    margin-bottom: 1rem;
+}
+
+.product__card--title p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+.product__card--price {
+    margin-bottom: 1rem;
+}
+
+.product__card--price span {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.product__card--price span:first-child {
+    margin-right: 0.3rem;
+}
+
+.product__card--btn button {
+    padding: 0.8rem 1rem;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.product__card--btn button:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.product__card--btn button:active {
+    transform: scale(0.97);
+}
+
+.product__card:hover {
+    border: 1px solid #f10e34;
+    box-shadow: 3px -3px 15px #f10e34;
+}
+
+.product__card:hover .product__card--img a picture img {
+    transform: scale(1.1);
+}
+
+.product__card:hover .product__card--price span {
+    color: #f10e34;
+}
+
+.pagination {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.pagination .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .nav-links .page-numbers {
+    display: block;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid #cacaca;
+    width: 3rem;
+    height: 3rem;
+    background-color: #eaeaea;
+    line-height: 2.8rem;
+    margin-left: 0.5rem;
+    transition: background-color 0.2s linear;
+}
+
+.pagination .nav-links .page-numbers:first-child {
+    margin-left: 0;
+}
+
+.pagination .nav-links .page-numbers:hover {
+    cursor: pointer;
+}
+
+.pagination .nav-links .current {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.pagination .nav-links .next {
+    width: 6rem;
 }
 
 /*==============vendor=============*/

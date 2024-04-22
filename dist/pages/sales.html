@@ -86,7 +86,7 @@
                   <span></span>
                   <span></span>
                </div><!--/.burger__btn-->
-               <p style="cursor: default;">
+               <p id="catBtn">
                   Категорії
                </p>
             </div><!--/.cat-->
@@ -204,66 +204,299 @@
                   </li>
                </ul><!--/.aside__cat-->
             </aside><!--/.aside-->
-            <section class="main__content" id="mainContent">
-               <!--intro-->
-               <div class="intro">
-                  <div class="intro__slider">
-                     <div class="slider__content" id="introSlider">
-                        <picture>
-                           <source srcset="../img/intro/slide1.webp" type="image/webp">
-                           <img src="../img/intro/slide1.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide2.webp" type="image/webp">
-                           <img src="../img/intro/slide2.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide3.webp" type="image/webp">
-                           <img src="../img/intro/slide3.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide4.webp" type="image/webp">
-                           <img src="../img/intro/slide4.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide5.webp" type="image/webp">
-                           <img src="../img/intro/slide5.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide6.webp" type="image/webp">
-                           <img src="../img/intro/slide6.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide7.webp" type="image/webp">
-                           <img src="../img/intro/slide7.JPG" alt="slide" class="img">
-                        </picture>
-                        <picture>
-                           <source srcset="../img/intro/slide8.webp" type="image/webp">
-                           <img src="../img/intro/slide8.JPG" alt="slide" class="img">
-                        </picture>
-                     </div><!--/.slider__content-->
-                  </div><!--/.intro__slider-->
-                  <div class="intro__content">
-                     <h1><span>Techno</span>Shop</h1>
-                     <h2>Техніка яка полегшує життя</h2>
-                     <a href="sales.html">Купити зараз</a>
-                     <div class="intro__content--baner">
-                        <div class="baner__coll">
-                           <h3>Безплатна доставка товару</h3>
-                           <p>безкоштовна доставка призамовленні від 2500 &#8372;</p>
-                        </div><!--baner__coll-->
-                        <div class="baner__coll">
-                           <h3>Обмін та повернення</h3>
-                           <p>обмін та повернення товару, гарантія якості</p>
-                        </div><!--/.baner__coll-->
-                        <div class="baner__coll">
-                           <h3>Спеціальні пропозиції</h3>
-                           <p>сезонні акції та знижки, промо акції</p>
-                        </div><!--/.baner__coll-->
-                     </div><!--/.baner-->
-                  </div><!--/.intro__content-->
-               </div><!--/.intro-->
-            </section><!--/.main__content-->
+            <!--catalog block-->
+            <section class="catalog__block">
+               <div class="catalog__block--title">
+                  <div class="catalog__title">
+                     <h2>
+                        Каталог
+                     </h2>
+                  </div><!--/.title-->
+                  <div class="catalog__sort">
+                     <input type="radio" id="popular" name="sorter" checked>
+                     <label for="popular">за популярністю</label>
+                     <input type="radio" id="lowPrice" name="sorter">
+                     <label for="lowPrice">спочатку дешевші</label>
+                     <input type="radio" id="heightPrice" name="sorter">
+                     <label for="heightPrice">спочатку дорожчі</label>
+                  </div><!--/.sort-->
+               </div><!--/.title-->
+               <!--content-->
+               <div class="catalog__block--content">
+                  <div class="product__card" data-cat="tehnika_dlya_kuhni" data-order="4769">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/product/gryl.webp" type="image/webp">
+                              <img src="../img/product/gryl.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Аерогриль-фритюрниця SOKANY SK-10004
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="4769">4769</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="tehnika_dlya_domy" data-order="2560">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/product/praska.webp" type="image/webp">
+                              <img src="../img/product/praska.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Праска SOKANY SK-11029 з титановою підошвою
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="2560">2560</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="tehnika_dlya_domy" data-order="4200">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/product/pylosos.webp" type="image/webp">
+                              <img src="../img/product/pylosos.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Пилосос SOKANY SK-13003 колбовий циклонний
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="4200">4200</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="elektronika" data-order="2520">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/product/reestrator.webp" type="image/webp">
+                              <img src="../img/product/reestrator.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Відеореєстратор автомобільний T720TP
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="2520">2520</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="elektronika" data-order="5500">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/product/tablet.webp" type="image/webp">
+                              <img src="../img/product/tablet.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Планшет Smart X20 PRO 10,1" 64/256 Gb
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="5500">5500</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="dytyachi_tovary" data-order="2900">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/proposition/fotoaparat.webp" type="image/webp">
+                              <img src="../img/proposition/fotoaparat.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Дитячий фотоапарат з печаткою Фламінго
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="2990">2990</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="krasa_ta_zdorovya" data-order="3330">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/proposition/stailer.webp" type="image/webp">
+                              <img src="../img/proposition/stailer.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Фен для волосся X-13 професійний 4 насадки
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="3330">3330</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="tehnika_dlya_domy" data-order="1530">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/proposition/teploventylator.webp" type="image/webp">
+                              <img src="../img/proposition/teploventylator.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Тепловентилятор Sokany SK-1653 2000 Вт
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="1530">1530</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="tehnika_dlya_kuhni" data-order="1570">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/popular/sk1729.webp" type="image/webp">
+                              <img src="../img/popular/sk1729.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Блендер занурювальний ручний Sokany SK-1729
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="1570">1570</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="dytyachi_tovary" data-order="1400">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/popular/c20BT.webp" type="image/webp">
+                              <img src="../img/popular/c20BT.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Портативна колонка з мікрофоном C-20 BT
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="1400">1400</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="decor_ta_interier" data-order="450">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/popular/microfonk9.webp" type="image/webp">
+                              <img src="../img/popular/microfonk9.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Мікрофон петличний бездротовий K9
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="450">450</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+                  <div class="product__card" data-cat="girlyandy" data-order="1350">
+                     <div class="product__card--img">
+                        <a href="tovar.html">
+                           <picture>
+                              <source srcset="../img/popular/smartG3PRO.webp" type="image/webp">
+                              <img src="../img/popular/smartG3PRO.jpg" alt="tovar" class="img">
+                           </picture>
+                        </a>
+                     </div><!--/.img-->
+                     <div class="product__card--title">
+                        <p>
+                           Смарт-годинник жіночий G3 Pro
+                        </p>
+                     </div><!--/.title-->
+                     <div class="product__card--price">
+                        <span data-price="1350">1350</span>
+                        <span>грн</span>
+                     </div><!--/.price-->
+                     <div class="product__card--btn">
+                        <button type="button" class="_buyBtn">Купити</button>
+                     </div>
+                  </div><!--/.product__card-->
+               </div><!--/.content-->
+               <!--pagination-->
+               <nav class="navigation pagination" role="navigation">
+                  <div class="nav-links">
+                     <span aria-current="page" class="page-numbers current">1</span>
+                     <a class="page-numbers" href="">2</a>
+                     <a class="next page-numbers" href="">Далі</a>
+                  </div><!--/.nav-links-->
+               </nav><!--/.pagination-->
+            </section><!--/.catalog__block-->
          </div><!--/.main__row-->
       </div><!--/.container-->
    </main>
@@ -393,5 +626,7 @@
    <script src="../js/vendor/slick.min.js"></script>
    <!-- main script -->
    <script src="../js/main.js"></script>
+   <!-- mail script -->
+   <script src="../js/mail.js"></script>
 </body>
 </html>
