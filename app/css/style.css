@@ -1168,46 +1168,6 @@ a:active {
     font-size: 1.5rem;
 }
 
-.popular__item {
-    text-align: center;
-}
-
-.popular__item--title {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-family: "Lato", sans-serif;
-    color: #222222;
-}
-
-.popular__item--price {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    color: #000000;
-}
-
-.popular__item--button {
-    padding: 0.8rem 0.4rem;
-    margin-top: 0.5rem;
-    font-family: "Lato", sans-serif;
-    border: 1px solid #f10e34;
-    background-color: #ffffff;
-    color: #222222;
-    font-size: 1.4rem;
-    font-weight: 700;
-    transition: color 0.2s linear, background-color 0.2s linear;
-}
-
-.popular__item--button:hover {
-    background-color: #f10e34;
-    color: #ffffff;
-}
-
-.popular__item--button:active {
-    transform: scale(0.97);
-}
-
 /*baner*/
 .baner {
     padding: 1rem 0;

@@ -48,37 +48,3 @@
       }
    }
 }
-.popular__item {
-   text-align: center;
-   &--title {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-      font-family: $font;
-      color: $black-l;
-   }
-   &--price {
-      margin-top: 0.5rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-      font-family: $font;
-      color: $black;
-   }
-   &--button {
-      padding: 0.8rem 0.4rem;
-      margin-top: 0.5rem;
-      font-family: $font;
-      border: 1px solid $red;
-      background-color: $white;
-      color: $black-l;
-      font-size: 1.4rem;
-      font-weight: 700;
-      transition: color 0.2s linear, background-color 0.2s linear;
-      &:hover {
-         background-color: $red;
-         color: $white;
-      }
-      &:active {
-         transform: scale(0.97);
-      }
-   }
-}
