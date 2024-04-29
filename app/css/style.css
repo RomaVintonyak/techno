@@ -236,6 +236,10 @@ template {
     }
 }
 
+.hide {
+    display: none;
+}
+
 /*main style*/
 * {
     border: 0;
