@@ -2477,6 +2477,154 @@ a:active {
     width: 6rem;
 }
 
+/*tovar page*/
+.tovar__title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.tovar__title h2 {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.tovar__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tovar__block--galery {
+    width: 48%;
+}
+
+.tovar__block--content {
+    width: 48%;
+}
+
+.galery__block--b {
+    margin: 0 auto 2rem;
+    width: 80%;
+}
+
+.galery__block--b a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.galery__block--sm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.galery__block--sm a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+.tovar__summ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.tovar__count {
+    width: 30%;
+    height: 5rem;
+    border: 1px solid #cacaca;
+    display: flex;
+}
+
+.tovar__count button {
+    width: 25%;
+    border: none;
+    background-color: transparent;
+}
+
+.tovar__count button i {
+    color: #000000;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.tovar__count button:hover i {
+    color: #f10e34;
+}
+
+.tovar__count button:active {
+    background-color: #cacaca;
+}
+
+.tovar__count input {
+    display: block;
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #000000;
+}
+
+.tovar__price span {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #f10e34;
+}
+
+.tovar__btn {
+    margin-bottom: 1rem;
+}
+
+.tovar__btn button {
+    padding: 1.2rem 2.4rem;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.tovar__btn button:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.tovar__btn button:active {
+    transform: scale(0.97);
+}
+
+.tovar__description {
+    margin-bottom: 1rem;
+}
+
+.tovar__description h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #f10e34;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tovar__description p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

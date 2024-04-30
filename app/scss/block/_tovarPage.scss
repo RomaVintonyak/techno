@@ -1,0 +1,130 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.tovar__title {
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+   h2 {
+      color: $black;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 2rem;
+   }
+}
+.tovar__block {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   &--galery {
+      width: 48%;
+   }
+   &--content {
+      width: 48%;
+   }
+}
+.galery__block--b {
+   margin: 0 auto 2rem;
+   width: 80%;
+   a {
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+   }
+}
+.galery__block--sm {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: flex-start;
+   a {
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+      width: 20%;
+   }
+}
+.tovar__summ {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+.tovar__count {
+   width: 30%;
+   height: 5rem;
+   border: 1px solid $silver-l;
+   display: flex;
+   button {
+      width: 25%;
+      border: none;
+      background-color: transparent;
+      i {
+         color: $black;
+         font-size: 1.7rem;
+         transition: color 0.2s linear;
+      }
+      &:hover {
+         i {
+            color: $red;
+         }
+      }
+      &:active {
+         background-color: $silver-l;
+      }
+   }
+   input {
+      display: block;
+      width: 50%;
+      text-align: center;
+      border-left: 1px solid $silver;
+      border-right: 1px solid $silver;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: $black;
+   }
+}
+.tovar__price {
+   span {
+      font-family: $font;
+      font-weight: 700;
+      font-size: 2rem;
+      color: $red;
+   }
+}
+.tovar__btn {
+   margin-bottom: 1rem;
+   button {
+      padding: 1.2rem 2.4rem;
+      font-family: $font;
+      border: 1px solid $red;
+      background-color: $white;
+      color: $black;
+      font-size: 1.4rem;
+      font-weight: 700;
+      transition: color 0.2s linear, background-color 0.2s linear;
+      &:hover {
+         background-color: $red;
+         color: $white;
+      }
+      &:active {
+         transform: scale(0.97);
+      }
+   }
+}
+.tovar__description {
+   margin-bottom: 1rem;
+   h2 {
+      font-family: $font;
+      font-weight: 700;
+      color: $red;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+   }
+   p {
+      font-family: $font;
+      font-weight: 400;
+      color: $black;
+      font-size: 1.7rem;
+   }
+}
