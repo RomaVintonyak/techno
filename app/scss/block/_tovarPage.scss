@@ -49,6 +49,49 @@
    justify-content: space-between;
    margin-bottom: 1rem;
 }
+.tovar__availability {
+   margin-bottom: 1rem;
+   p {
+      font-family: $font;
+      font-weight: 400;
+      color: $red;
+      font-size: 1.7rem;
+   }
+}
+.variation__color {
+   margin-bottom: 1rem;
+   display: flex;
+   h3 {
+      color: $black;
+      font-family: $black;
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin-right: 1rem;
+   }
+   p {
+      font-family: $font;
+      font-weight: 700;
+      color: $black;
+      font-size: 1.7rem;
+   }
+}
+.variation__list {
+   margin-bottom: 1rem;
+   width: 100%;
+   select {
+      border: 1px solid $silver-l;
+      width: 35%;
+      font-family: $font;
+      font-weight: 700;
+      color: $black;
+      font-size: 1.7rem;
+      padding: 0.5rem 1rem;
+      background-color: $white;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}
 .tovar__count {
    width: 30%;
    height: 5rem;
@@ -126,5 +169,74 @@
       font-weight: 400;
       color: $black;
       font-size: 1.7rem;
+   }
+}
+.tovar__option {
+   h3 {
+      font-family: $font;
+      font-weight: 700;
+      color: $red;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+   }
+   ul {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      padding-left: 2rem;
+      li {
+         font-family: $font;
+         font-weight: 400;
+         color: $black;
+         font-size: 1.7rem;
+         margin-bottom: 0.3rem;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+.tovar__slider {
+   margin-top: 2rem;
+   &--title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      background-color: $silver;
+      padding: 1.5rem;
+      h3 {
+         font-family: $font;
+         font-weight: 700;
+         color: $red;
+         font-size: 2rem;
+      }
+   }
+}
+.slider__button {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   button {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $silver-l;
+      border: none;
+      transition: background-color 0.2s linear;
+      &:first-child {
+         margin-right: 0.5rem;
+      }
+      &:hover {
+         cursor: pointer;
+         background-color: $red;
+      }
+      i {
+         color: $white;
+         font-size: 1.5rem;
+      }
    }
 }
