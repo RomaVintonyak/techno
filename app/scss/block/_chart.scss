@@ -1,0 +1,184 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.basket__title {
+   margin: 2rem 0;
+   &--row {
+      h2 {
+         color: $black;
+         font-family: $font;
+         font-weight: 700;
+         font-size: 2.5rem;
+      }
+   }
+}
+.basket__product {
+   margin-bottom: 2rem;
+}
+.chart__block {
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &:last-child {
+      margin-bottom: 0;
+   }
+   &--delete {
+      width: 3%;
+      display: flex;
+      justify-content: center;
+      button {
+         display: block;
+         border: none;
+         background-color: transparent;
+         i {
+            font-size: 2rem;
+            color: $black;
+            transition: color 0.1s linear;
+         }
+         &:hover {
+            cursor: pointer;
+            i {
+               color: $red;
+            }
+         }
+      }
+   }
+   &--content {
+      width: 95%;
+      border: 1px solid $red;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+.tovar__img {
+   width: 20%;
+}
+.tovar__opys {
+   width: 30%;
+   h3 {
+      font-family: $font;
+      color: $black;
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+   }
+   &--price {
+      color: $red;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.7rem;
+   }
+}
+.chart__tovar--count {
+   width: 20%;
+   height: 5rem;
+   border: 1px solid $silver-l;
+   display: flex;
+   button {
+      width: 25%;
+      border: none;
+      background-color: transparent;
+      i {
+         color: $black;
+         font-size: 1.7rem;
+         transition: color 0.2s linear;
+      }
+      &:hover {
+         i {
+            color: $red;
+         }
+      }
+      &:active {
+         background-color: $silver-l;
+      }
+   }
+   input {
+      display: block;
+      width: 50%;
+      text-align: center;
+      border-left: 1px solid $silver;
+      border-right: 1px solid $silver;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: $black;
+   }
+}
+.chart__tovar-summ {
+   width: 15%;
+   text-align: center;
+   color: $red;
+   font-family: $font;
+   font-weight: 700;
+   font-size: 1.7rem;
+}
+.basket__footer {
+   margin-top: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.reload__btn {
+   button {
+      margin: 0;
+      padding: 0.8rem 1rem;
+      border: 1px solid $red;
+      background-color: $white;
+      color: $black;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.7rem;
+      transition: background-color 0.2s linear, color 0.2s linear;
+      &:hover{
+         background-color: $red;
+         color: $white;
+         cursor: pointer;
+      }
+   }
+}
+.total__summ{
+   display: flex;
+   &--title{
+      margin-right: 2rem;
+      p{
+         font-family: $font;
+         font-weight: 700;
+         color: $black;
+         font-size: 1.7rem;
+      }
+   }
+   &--rezult{
+      span{
+         font-family: $font;
+         font-weight: 700;
+         font-size: 1.7rem;
+         color: $red;
+         &:first-child{
+            margin-right: 0.1rem;
+         }
+      }
+   }
+}
+.basket__bye{
+   margin-top: 2rem;
+   text-align: right;
+   a{
+      text-decoration: none;
+      padding: 0.8rem 1rem;
+      border: 1px solid $red;
+      background-color: $white;
+      color: $black;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.7rem;
+      transition: background-color 0.2s linear, color 0.2s linear;
+      &:hover{
+         background-color: $red;
+         color: $white;
+         cursor: pointer;
+      }
+   }
+}

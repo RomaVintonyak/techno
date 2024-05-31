@@ -61,10 +61,10 @@ jQuery(document).ready(function () {
       tovarSlider.slick("slickNext");
    });
    /*lightbox tovar galery*/
-   /*lightbox.option({
+   lightbox.option({
       resizeDuration: 500,
       fadeDuration: 500,
       disableScrolling: true,
       wrapAround: true,
-   })*/
+   })
 });

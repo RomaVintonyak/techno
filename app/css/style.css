@@ -2755,6 +2755,213 @@ a:active {
     font-size: 1.5rem;
 }
 
+/*chart page*/
+.basket__title {
+    margin: 2rem 0;
+}
+
+.basket__title--row h2 {
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.basket__product {
+    margin-bottom: 2rem;
+}
+
+.chart__block {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart__block:last-child {
+    margin-bottom: 0;
+}
+
+.chart__block--delete {
+    width: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.chart__block--delete button {
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+
+.chart__block--delete button i {
+    font-size: 2rem;
+    color: #000000;
+    transition: color 0.1s linear;
+}
+
+.chart__block--delete button:hover {
+    cursor: pointer;
+}
+
+.chart__block--delete button:hover i {
+    color: #f10e34;
+}
+
+.chart__block--content {
+    width: 95%;
+    border: 1px solid #f10e34;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tovar__img {
+    width: 20%;
+}
+
+.tovar__opys {
+    width: 30%;
+}
+
+.tovar__opys h3 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.tovar__opys--price {
+    color: #f10e34;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.chart__tovar--count {
+    width: 20%;
+    height: 5rem;
+    border: 1px solid #cacaca;
+    display: flex;
+}
+
+.chart__tovar--count button {
+    width: 25%;
+    border: none;
+    background-color: transparent;
+}
+
+.chart__tovar--count button i {
+    color: #000000;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.chart__tovar--count button:hover i {
+    color: #f10e34;
+}
+
+.chart__tovar--count button:active {
+    background-color: #cacaca;
+}
+
+.chart__tovar--count input {
+    display: block;
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #000000;
+}
+
+.chart__tovar-summ {
+    width: 15%;
+    text-align: center;
+    color: #f10e34;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.basket__footer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reload__btn button {
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.reload__btn button:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.total__summ {
+    display: flex;
+}
+
+.total__summ--title {
+    margin-right: 2rem;
+}
+
+.total__summ--title p {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.total__summ--rezult span {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #f10e34;
+}
+
+.total__summ--rezult span:first-child {
+    margin-right: 0.1rem;
+}
+
+.basket__bye {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.basket__bye a {
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.basket__bye a:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {
