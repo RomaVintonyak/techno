@@ -132,40 +132,40 @@
       font-weight: 700;
       font-size: 1.7rem;
       transition: background-color 0.2s linear, color 0.2s linear;
-      &:hover{
+      &:hover {
          background-color: $red;
          color: $white;
          cursor: pointer;
       }
    }
 }
-.total__summ{
+.total__summ {
    display: flex;
-   &--title{
+   &--title {
       margin-right: 2rem;
-      p{
+      p {
          font-family: $font;
          font-weight: 700;
          color: $black;
          font-size: 1.7rem;
       }
    }
-   &--rezult{
-      span{
+   &--rezult {
+      span {
          font-family: $font;
          font-weight: 700;
          font-size: 1.7rem;
          color: $red;
-         &:first-child{
+         &:first-child {
             margin-right: 0.1rem;
          }
       }
    }
 }
-.basket__bye{
+.basket__bye {
    margin-top: 2rem;
    text-align: right;
-   a{
+   a {
       text-decoration: none;
       padding: 0.8rem 1rem;
       border: 1px solid $red;
@@ -175,7 +175,7 @@
       font-weight: 700;
       font-size: 1.7rem;
       transition: background-color 0.2s linear, color 0.2s linear;
-      &:hover{
+      &:hover {
          background-color: $red;
          color: $white;
          cursor: pointer;
