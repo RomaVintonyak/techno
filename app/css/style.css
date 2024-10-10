@@ -3097,6 +3097,59 @@ a:active {
     transform: scale(0.98);
 }
 
+/*order page*/
+.order {
+    margin: 4rem auto;
+}
+
+.order__row {
+    padding: 3rem;
+    background-color: #ffffff;
+}
+
+.order__row--title {
+    margin-bottom: 2rem;
+}
+
+.order__row--title h2 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.order__row--content {
+    margin-bottom: 3rem;
+}
+
+.order__row--footer p {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.order__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 0.5rem;
+}
+
+.order__block:last-child {
+    margin-bottom: 0;
+}
+
+.order__block p {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

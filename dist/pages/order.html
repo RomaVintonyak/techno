@@ -113,73 +113,46 @@
    <!--main content-->
    <main class="main" id="main">
       <!--checkout-->
-      <section class="chackout">
+      <section class="order">
          <div class="container">
-            <div class="chackout__row">
-               <div class="chackout__content">
-                  <div class="chackout__content--title">
-                     <h2>
-                        Оформити замовлення
-                     </h2>
-                  </div><!--/.title-->
-                  <div class="chackout__content--form">
-                     <form data-action="#" class="chackout__form" id="chackoutForm">
-                        <div class="chackout__form--block">
-                           <label for="chackoutPIB">ПІБ</label>
-                           <input type="text" id="chackoutPIB" name="chackoutPIB">
-                           <p class="error__pib--chackout">Введіть анкетні дані...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--block">
-                           <label for="chackoutPhone">Телефон</label>
-                           <input type="tel" id="chackoutPhone" name="chackoutPhone">
-                           <p class="error__phone--chackout">Введіть актуальний номер телефону...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--block">
-                           <label for="chackoutMail">Е-пошта</label>
-                           <input type="email" id="chackoutMail" name="chackoutMail">
-                           <p class="error__mail--chackout">Введіть електронну адресу...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--block">
-                           <label for="chackoutRegion">Область</label>
-                           <input type="text" id="chackoutRegion" name="chackoutRegion">
-                           <p class="error__region--chackout">Введіть область...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--block">
-                           <label for="chackoutCity">Місто</label>
-                           <input type="text" id="chackoutCity" name="chackoutCity">
-                           <p class="error__city--chackout">Введіть місто...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--block">
-                           <label for="chackoutDepartment">Відділення</label>
-                           <input type="text" id="chackoutDepartment" name="chackoutDepartment">
-                           <p class="error__department--chackout">Введіть відділення...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--block">
-                           <label for="chackoutPay">Оплата</label>
-                           <select name="chackoutPay" id="chackoutPay">
-                              <option value="Оплата на картку (рахунок)">Оплата на картку (рахунок)</option>
-                              <option value="Накладений платіж">Накладений платіж</option>
-                           </select>
-                           <p class="error__pay--chackout">Виберіть спосіб оплати...</p>
-                        </div><!--/.block-->
-                        <div class="chackout__form--button">
-                           <button id="sendChackout" type="button">
-                              Оформити замовлення
-                              <i class="fas fa-paper-plane"></i>
-                           </button>
-                        </div>
-                     </form>
-                  </div><!--/.form-->
-                  <div class="chackout__content--footer">
+            <div class="order__row">
+               <div class="order__row--title">
+                  <h2>
+                     Дякуємо за Ваше замовлення!
+                  </h2>
+               </div><!--/.title-->
+               <div class="order__row--content">
+                  <div class="order__block">
                      <p>
-                        Підтверджуючи замовлення, я приймаю умови
+                        Ваше замовлення №
                      </p>
-                     <a href="oferta.html" target="_blank">
-                        користувацької угоди
-                     </a>
-                  </div><!--/.footer-->
-               </div><!--/.chackout__content-->
-            </div><!--/.chackout__row-->
+                     <p id="orderNumber">
+                        1265
+                     </p>
+                  </div><!--/order__block-->
+                  <div class="order__block">
+                     <p>
+                        Загальною вартістю
+                     </p>
+                     <p id="orderSumm">
+                        6530
+                     </p>
+                  </div><!--/order__block-->
+                  <div class="order__block">
+                     <p>
+                        Статус &mdash;
+                     </p>
+                     <p id="orderStatus">
+                        Прийнято
+                     </p>
+                  </div><!--/order__block-->
+               </div><!--/.content-->
+               <div class="order__row--footer">
+                  <p>
+                     очікуйте на дзвінок нашого манаджера для підтвердження замовлення
+                  </p>
+               </div><!--/.footer-->
+            </div><!--/.order__row-->
          </div><!--/.container-->
       </section><!--/.chackout-->
       <!--baner logo row-->

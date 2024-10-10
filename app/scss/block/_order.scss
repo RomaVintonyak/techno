@@ -1,0 +1,48 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.order {
+   margin: 4rem auto;
+   &__row {
+      padding: 3rem;
+      background-color: $white;
+      &--title {
+         margin-bottom: 2rem;
+         h2 {
+            font-family: $font;
+            color: $black;
+            font-weight: 700;
+            font-size: 2.5rem;
+         }
+      }
+      &--content {
+         margin-bottom: 3rem;
+      }
+      &--footer {
+         p {
+            font-family: $font;
+            color: $black;
+            font-weight: 700;
+            font-size: 1.6rem;
+         }
+      }
+   }
+}
+.order__block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 50%;
+   margin-bottom: 1.5rem;
+   border-bottom: 1px solid $silver-l;
+   padding-bottom: 0.5rem;
+   &:last-child {
+      margin-bottom: 0;
+   }
+   p {
+      font-family: $font;
+      color: $black;
+      font-weight: 700;
+      font-size: 1.6rem;
+   }
+}
