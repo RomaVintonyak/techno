@@ -35,6 +35,9 @@
          &:hover {
             cursor: pointer;
          }
+         @include tablet {
+            font-size: 1.4rem;
+         }
       }
       &:after {
          content: ("");

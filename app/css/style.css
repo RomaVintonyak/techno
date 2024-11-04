@@ -496,6 +496,13 @@ a:active {
     padding: 1rem 0;
 }
 
+@media (max-width: 768px) {
+    .header__row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .header__form {
     display: flex;
     align-items: center;
@@ -551,6 +558,25 @@ a:active {
     color: #222222;
 }
 
+@media (max-width: 576px) {
+    .header__form--search form button {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__form--search {
+        width: 50%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__form--search {
+        width: 72%;
+    }
+}
+
 .header__form--chart {
     width: 20%;
     display: flex;
@@ -577,6 +603,26 @@ a:active {
 
 .header__form--chart a:hover i {
     color: #222222;
+}
+
+@media (max-width: 768px) {
+    .header__form--chart {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__form--chart {
+        width: 28%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__form {
+        width: 100%;
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
 }
 
 .chart__price p {
@@ -623,6 +669,13 @@ a:active {
     }
 }
 
+@media (max-width: 991px) {
+    .nav__content--cat {
+        width: 100%;
+        height: 4rem;
+    }
+}
+
 .nav__content--menu {
     margin: 0;
     padding: 0;
@@ -630,6 +683,29 @@ a:active {
     list-style-type: none;
     display: flex;
     height: 4rem;
+}
+
+@media (max-width: 991px) {
+    .nav__content--menu {
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: 1100;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f10e34;
+        transition: all 0.2s linear;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__content--menu {
+        width: 60%;
+        right: -60%;
+    }
 }
 
 .menu__item {
@@ -657,6 +733,12 @@ a:active {
     transition: color 0.2s linear;
 }
 
+@media (max-width: 991px) {
+    .menu__item--link {
+        padding: 0.7rem 0.5rem;
+    }
+}
+
 .menu__item .active {
     color: #222222;
 }
@@ -668,6 +750,21 @@ a:active {
 .menu__item:hover a {
     cursor: pointer;
     color: #222222;
+}
+
+@media (max-width: 991px) {
+    .menu__item {
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+    .menu__item:first-child {
+        margin-top: 0;
+    }
+}
+
+.menu__open {
+    right: 0;
 }
 
 /*burger*/
@@ -787,6 +884,12 @@ a:active {
     cursor: pointer;
 }
 
+@media (max-width: 991px) {
+    .aside__cat--item a {
+        font-size: 1.4rem;
+    }
+}
+
 .aside__cat--item:after {
     content: "";
     position: absolute;
@@ -845,6 +948,12 @@ a:active {
     color: #f10e34 !important;
 }
 
+@media (max-width: 991px) {
+    .intro__content h1 {
+        margin-top: 10%;
+    }
+}
+
 .intro__content h2 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -895,11 +1004,23 @@ a:active {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 991px) {
+    .baner__coll h3 {
+        font-size: 1.4rem;
+    }
+}
+
 .baner__coll p {
     font-size: 1.4rem;
     font-family: "Lato", sans-serif;
     color: #ffffff;
     font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    .baner__coll p {
+        font-size: 1.3rem;
+    }
 }
 
 /*product*/
@@ -2384,6 +2505,12 @@ a:active {
     font-size: 1.8rem;
 }
 
+@media (max-width: 991px) {
+    .product__card--title p {
+        font-size: 1.5rem;
+    }
+}
+
 .product__card--price {
     margin-bottom: 1rem;
 }
@@ -3105,6 +3232,7 @@ a:active {
 .order__row {
     padding: 3rem;
     background-color: #ffffff;
+    position: relative;
 }
 
 .order__row--title {
@@ -3129,6 +3257,16 @@ a:active {
     font-size: 1.6rem;
 }
 
+.order__row::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid #cacaca;
+}
+
 .order__block {
     display: flex;
     justify-content: space-between;
@@ -3148,6 +3286,31 @@ a:active {
     color: #000000;
     font-weight: 700;
     font-size: 1.6rem;
+}
+
+.back__index {
+    margin-top: 2rem;
+}
+
+.back__index a {
+    text-decoration: none;
+    padding: 1.2rem 2.4rem;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #f10e34;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.back__index a:hover {
+    background-color: #f10e34;
+    color: #ffffff;
+}
+
+.back__index a:active {
+    transform: scale(0.97);
 }
 
 /*==============vendor=============*/

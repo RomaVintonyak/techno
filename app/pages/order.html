@@ -132,6 +132,14 @@
                   </div><!--/order__block-->
                   <div class="order__block">
                      <p>
+                        Час замовлення
+                     </p>
+                     <p id="orderNumber">
+                        <script>document.write(new Date().getFullYear() + "/" + (new Date().getMonth()+1) + "/" + new Date().getDate() + "&mdash;" + new Date().getHours() + ":" + new Date().getMinutes());</script>
+                     </p>
+                  </div><!--/order__block-->
+                  <div class="order__block">
+                     <p>
                         Загальною вартістю
                      </p>
                      <p id="orderSumm">
@@ -140,7 +148,7 @@
                   </div><!--/order__block-->
                   <div class="order__block">
                      <p>
-                        Статус &mdash;
+                        Статус
                      </p>
                      <p id="orderStatus">
                         Прийнято
@@ -149,9 +157,12 @@
                </div><!--/.content-->
                <div class="order__row--footer">
                   <p>
-                     очікуйте на дзвінок нашого манаджера для підтвердження замовлення
+                     Очікуйте на дзвінок нашого манаджера для підтвердження замовлення
                   </p>
                </div><!--/.footer-->
+               <div class="back__index">
+                  <a href="../index.html" target="_blank">На головну</a>
+               </div><!--/.back-->
             </div><!--/.order__row-->
          </div><!--/.container-->
       </section><!--/.chackout-->

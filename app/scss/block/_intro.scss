@@ -12,7 +12,6 @@
       top: 0;
       left: 0;
       h1 {
-         
          font-family: $font;
          font-weight: 700;
          font-size: 6rem;
@@ -20,7 +19,10 @@
          margin-left: 3rem;
          margin-top: 20%;
          span {
-            color: $red!important;
+            color: $red !important;
+         }
+         @include tablet {
+            margin-top: 10%;
          }
       }
       h2 {
@@ -31,7 +33,7 @@
          margin-left: 3rem;
          margin-bottom: 2rem;
       }
-      a{
+      a {
          text-decoration: none;
          margin-left: 3rem;
          padding: 1rem 0.5rem;
@@ -40,7 +42,7 @@
          font-size: 1.8rem;
          font-weight: 700;
          transition: color 0.2s linear, background-color 0.2s linear;
-         &:hover{
+         &:hover {
             background-color: $white;
             color: $black-l;
          }
@@ -67,11 +69,17 @@
       font-weight: 400;
       text-transform: uppercase;
       margin-bottom: 0.5rem;
+      @include tablet {
+         font-size: 1.4rem;
+      }
    }
-   p{
+   p {
       font-size: 1.4rem;
       font-family: $font;
       color: $white;
       font-weight: 400;
+      @include tablet {
+         font-size: 1.3rem;
+      }
    }
 }

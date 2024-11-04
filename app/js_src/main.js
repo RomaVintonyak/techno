@@ -22,6 +22,9 @@ jQuery(document).ready(function () {
       burgerBtn.removeClass("burger__btn--active");
     }
   });
+  burgerBtn.on("click", function(){
+    $(".nav__content--menu").toggleClass("menu__open");
+  });
   /*intro slider*/
   var introSlider = $("#introSlider");
   introSlider.slick({
