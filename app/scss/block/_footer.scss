@@ -8,6 +8,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include mobile {
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+      }
+      @include mobile-sm {
+         justify-content: center;
+      }
    }
 }
 .footer__description {
@@ -85,6 +92,18 @@
          }
       }
    }
+   @include mobile {
+      width: 40%;
+      margin-bottom: 2rem;
+   }
+   @include mobile-sm {
+      width: 90%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $white;
+   }
+   @include mobile-xsm {
+      width: 100%;
+   }
 }
 .footer__menu {
    width: 22%;
@@ -117,6 +136,18 @@
             }
          }
       }
+   }
+   @include mobile {
+      width: 40%;
+      margin-bottom: 2rem;
+   }
+   @include mobile-sm {
+      width: 90%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $white;
+   }
+   @include mobile-xsm {
+      width: 100%;
    }
 }
 .footer__social {
@@ -164,6 +195,18 @@
          }
       }
    }
+   @include mobile {
+      width: 40%;
+      margin-bottom: 2rem;
+   }
+   @include mobile-sm {
+      width: 90%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $white;
+   }
+   @include mobile-xsm {
+      width: 100%;
+   }
 }
 .footer__time {
    width: 22%;
@@ -201,6 +244,17 @@
             margin-right: 0;
          }
       }
+   }
+   @include mobile {
+      width: 40%;
+   }
+   @include mobile-sm {
+      width: 90%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $white;
+   }
+   @include mobile-xsm {
+      width: 100%;
    }
 }
 .footer__copyright {

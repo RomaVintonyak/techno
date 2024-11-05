@@ -17,6 +17,12 @@
             color: $black;
             font-weight: bold;
             text-transform: uppercase;
+            @include mobile {
+               font-size: 2rem;
+            }
+            @include mobile-sm {
+               font-size: 1.5rem;
+            }
          }
          p {
             color: $black-l;
@@ -24,6 +30,12 @@
             font-size: 2rem;
             font-family: $font;
             font-weight: bold;
+            @include mobile {
+               font-size: 1.5rem;
+            }
+            @include mobile-sm {
+               font-size: 1.2rem;
+            }
          }
          a {
             text-decoration: none;
@@ -33,10 +45,24 @@
             font-size: 1.8rem;
             font-weight: 700;
             transition: color 0.2s linear, background-color 0.2s linear;
-            &:hover{
+            &:hover {
                color: $white;
                background-color: $red;
             }
+            @include mobile {
+               font-size: 1.6rem;
+               padding: 0.8rem 0.4rem;
+            }
+            @include mobile-sm {
+               font-size: 1.4rem;
+               padding: 0.6rem 0.3rem;
+            }
+         }
+         @include mobile {
+            top: 20%;
+         }
+         @include mobile-sm {
+            top: 10%;
          }
       }
    }

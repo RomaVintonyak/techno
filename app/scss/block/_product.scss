@@ -47,4 +47,12 @@
          }
       }
    }
+   @include mobile{
+      display: none;
+   }
+}
+.reklama__baner {
+   @include mobile{
+      display: none;
+   }
 }

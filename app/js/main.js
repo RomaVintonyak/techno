@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
       burgerBtn.removeClass("burger__btn--active");
     }
   });
-  burgerBtn.on("click", function(){
+  burgerBtn.on("click", function () {
     $(".nav__content--menu").toggleClass("menu__open");
   });
   /*intro slider*/
@@ -77,6 +77,20 @@ jQuery(document).ready(function () {
     focusOnSelect: false,
     fade: false,
     draggable: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 678,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   $(".proposition__button--prev").on("click", function () {
     propSlider.slick("slickPrev");
@@ -99,6 +113,20 @@ jQuery(document).ready(function () {
     focusOnSelect: false,
     fade: false,
     draggable: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 678,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   $(".popular__button--prev").on("click", function () {
     popularSlider.slick("slickPrev");
@@ -145,6 +173,14 @@ jQuery(document).ready(function () {
         $("html, body").animate({
           scrollTop: headerHeight
         }, 1000, "swing");
+      });
+    }
+  });
+  $(window).on("load resize", function () {
+    if ($(window).width() <= 768) {
+      catBtn.on("click", function (event) {
+        event.preventDefault();
+        $("#aside").toggleClass("aside__open");
       });
     }
   });

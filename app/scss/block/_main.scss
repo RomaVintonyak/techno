@@ -8,8 +8,14 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      @include mobile{
+         position: relative;
+      }
    }
    &__content{
       width: 900 / 1340 * 100%;
+      @include mobile{
+         width: 100%;
+      }
    }
 }
