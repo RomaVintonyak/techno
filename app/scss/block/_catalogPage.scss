@@ -14,6 +14,13 @@
             color: $black;
             font-family: $font;
             font-size: 2.5rem;
+            @include mobile {
+               font-size: 2rem;
+            }
+         }
+         @include tablet {
+            width: 100%;
+            margin-bottom: 2rem;
          }
       }
       .catalog__sort {
@@ -41,7 +48,19 @@
             &:hover {
                cursor: pointer;
             }
+            @include mobile-sm {
+               font-size: 1.5rem;
+               padding: 0.4rem 0.8rem;
+            }
+            @include mobile-xsm {
+               font-size: 1.3rem;
+               padding: 0.3rem 0.6rem;
+            }
          }
+      }
+      @include tablet {
+         flex-wrap: wrap;
+         justify-content: flex-start;
       }
    }
    &--content {
@@ -51,6 +70,9 @@
       justify-content: space-evenly;
       margin-top: 2rem;
       flex-wrap: wrap;
+   }
+   @include mobile {
+      width: 100%;
    }
 }
 .product__card {
@@ -136,6 +158,18 @@
             color: $red;
          }
       }
+   }
+   @include tablet {
+      width: 45%;
+   }
+   @include mobile {
+      width: 40%;
+   }
+   @include mobile-sm {
+      width: 45%;
+   }
+   @include mobile-xsm {
+      width: 100%;
    }
 }
 .pagination {
