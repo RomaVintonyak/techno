@@ -2025,6 +2025,12 @@ a:active {
     display: inline;
 }
 
+@media (max-width: 991px) {
+    .main__oferta--title h1 {
+        font-size: 2rem;
+    }
+}
+
 .oferta {
     margin-bottom: 2rem;
 }
@@ -2041,11 +2047,23 @@ a:active {
     margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+    .oferta__title h2 {
+        font-size: 1.8rem;
+    }
+}
+
 .oferta__title h3 {
     font-size: 2rem;
     font-weight: 400;
     color: #000000;
     font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .oferta__title h3 {
+        font-size: 1.8rem;
+    }
 }
 
 .oferta__text p {
@@ -2058,6 +2076,12 @@ a:active {
 .oferta__text p a {
     text-decoration: none;
     color: #f10e34;
+}
+
+@media (max-width: 768px) {
+    .oferta__text p {
+        font-size: 1.6rem;
+    }
 }
 
 .oferta__block {
@@ -2077,12 +2101,24 @@ a:active {
     margin-right: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    .oferta__block--title span {
+        font-size: 1.8rem;
+    }
+}
+
 .oferta__block--title p {
     display: inline-block;
     font-family: "Lato", sans-serif;
     color: #000000;
     font-weight: 400;
     font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .oferta__block--title p {
+        font-size: 1.8rem;
+    }
 }
 
 .oferta__block--list {
@@ -2112,6 +2148,12 @@ a:active {
     margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+    .oferta__block--list li p {
+        font-size: 1.6rem;
+    }
+}
+
 .oferta__block--list li:last-child {
     margin-bottom: 0;
 }
@@ -2136,6 +2178,18 @@ a:active {
     display: inline;
 }
 
+@media (max-width: 991px) {
+    .obmin__title--title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .obmin__title {
+        margin-top: 2rem;
+    }
+}
+
 .obmin__block {
     margin: 4rem 0;
 }
@@ -2158,6 +2212,7 @@ a:active {
 
 .block__text {
     width: 65%;
+    margin-top: 1rem;
 }
 
 .block__text--title {
@@ -2190,11 +2245,49 @@ a:active {
     text-transform: uppercase;
 }
 
+@media (max-width: 991px) {
+    .block__text--title p {
+        display: block;
+        width: 80%;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .block__text--title p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .block__text--title p {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+}
+
 .block__text--text p {
     color: #000000;
     font-family: "Lato", sans-serif;
     font-size: 1.7rem;
     font-weight: 400;
+    margin-top: 1rem;
+}
+
+.block__text--text p:last-child {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .block__text--text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .block__text--text p {
+        font-size: 1.3rem;
+    }
 }
 
 .block__icon {
@@ -2206,6 +2299,18 @@ a:active {
 .block__icon span i {
     color: #f10e34;
     font-size: 10rem;
+}
+
+@media (max-width: 768px) {
+    .block__icon span i {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .block__icon span i {
+        font-size: 6rem;
+    }
 }
 
 .obmin__line {
@@ -2224,8 +2329,16 @@ a:active {
     font-family: "Lato", sans-serif;
 }
 
-.block__tex {
-    margin-top: 1rem;
+@media (max-width: 991px) {
+    .obmin__line--row p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .obmin__line--row p {
+        font-size: 1.6rem;
+    }
 }
 
 .block__tex p {
@@ -2233,10 +2346,19 @@ a:active {
     font-family: "Lato", sans-serif;
     font-size: 1.7rem;
     font-weight: 400;
+    margin-top: 1rem;
 }
 
-.block__tex p:last-child {
-    margin-top: 1rem;
+@media (max-width: 768px) {
+    .block__tex p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .block__tex p {
+        font-size: 1.3rem;
+    }
 }
 
 /*dostavka ta oplata*/
@@ -2520,6 +2642,18 @@ a:active {
     display: inline;
 }
 
+@media (max-width: 991px) {
+    .contact__title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__title h1 {
+        font-size: 1.8rem;
+    }
+}
+
 .contact__block {
     margin-bottom: 4rem;
 }
@@ -2534,6 +2668,13 @@ a:active {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .contact__block--row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .contact__address {
@@ -2561,6 +2702,24 @@ a:active {
     font-weight: 400;
     font-family: "Lato", sans-serif;
     font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+    .contact__address--line span {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__address--line span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__address {
+        width: 100%;
+    }
 }
 
 .contact__form {
@@ -2607,6 +2766,12 @@ a:active {
     }
 }
 
+@media (max-width: 576px) {
+    .contact__form--block input {
+        font-size: 1.5rem;
+    }
+}
+
 .contact__form--block label {
     position: relative;
     top: -1rem;
@@ -2616,6 +2781,18 @@ a:active {
     color: #000000;
     font-family: "Lato", sans-serif;
     transition: font-size 0.1s linear, top 0.1s linear;
+}
+
+@media (max-width: 768px) {
+    .contact__form--block label {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__form--block label {
+        font-size: 1.5rem;
+    }
 }
 
 .contact__form--block textarea {
@@ -2642,6 +2819,12 @@ a:active {
 @media (max-width: 768px) {
     .contact__form--block textarea {
         font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__form--block textarea {
+        font-size: 1.5rem;
     }
 }
 
@@ -2690,9 +2873,28 @@ a:active {
     transform: scale(0.97);
 }
 
+@media (max-width: 768px) {
+    .contact__form--button button {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__form--button button {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 991px) {
     .contact__form--button {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__form {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }
 
@@ -2703,6 +2905,18 @@ a:active {
     font-weight: 400;
     font-size: 1.7rem;
     color: #f10e34;
+}
+
+@media (max-width: 768px) {
+    .error__text {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .error__text {
+        font-size: 1.5rem;
+    }
 }
 
 #name:focus ~ label[for="name"] {

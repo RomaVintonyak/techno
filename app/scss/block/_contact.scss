@@ -17,6 +17,12 @@
       font-weight: 700;
       border-bottom: 2px solid $red;
       display: inline;
+      @include tablet {
+         font-size: 2rem;
+      }
+      @include mobile {
+         font-size: 1.8rem;
+      }
    }
 }
 .contact__block {
@@ -28,6 +34,10 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      @include mobile {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
    }
 }
 .contact__address {
@@ -49,7 +59,16 @@
          font-weight: 400;
          font-family: $font;
          font-size: 1.7rem;
+         @include mobile {
+            font-size: 1.6rem;
+         }
+         @include mobile-sm {
+            font-size: 1.5rem;
+         }
       }
+   }
+   @include mobile {
+      width: 100%;
    }
 }
 .contact__form {
@@ -85,6 +104,9 @@
          @include mobile {
             font-size: 1.6rem;
          }
+         @include mobile-sm {
+            font-size: 1.5rem;
+         }
       }
       label {
          position: relative;
@@ -95,6 +117,12 @@
          color: $black;
          font-family: $font;
          transition: font-size 0.1s linear, top 0.1s linear;
+         @include mobile {
+            font-size: 1.6rem;
+         }
+         @include mobile-sm {
+            font-size: 1.5rem;
+         }
       }
       textarea {
          font-weight: 400;
@@ -116,6 +144,9 @@
          }
          @include mobile {
             font-size: 1.6rem;
+         }
+         @include mobile-sm {
+            font-size: 1.5rem;
          }
       }
       @include mobile {
@@ -153,10 +184,20 @@
          &:active {
             transform: scale(0.97);
          }
+         @include mobile {
+            font-size: 1.6rem;
+         }
+         @include mobile-sm {
+            font-size: 1.5rem;
+         }
       }
       @include tablet {
          margin-bottom: 1rem;
       }
+   }
+   @include mobile {
+      width: 100%;
+      margin-bottom: 2rem;
    }
 }
 .error__text {
@@ -166,6 +207,12 @@
    font-weight: 400;
    font-size: 1.7rem;
    color: $red;
+   @include mobile {
+      font-size: 1.6rem;
+   }
+   @include mobile-sm {
+      font-size: 1.5rem;
+   }
 }
 #name:focus ~ label[for="name"] {
    font-size: 1.2rem;

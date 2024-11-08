@@ -15,7 +15,13 @@
             font-weight: 700;
             border-bottom: 2px solid $red;
             display: inline;
+            @include tablet {
+               font-size: 2rem;
+            }
          }
+      }
+      @include tablet {
+         margin-top: 2rem;
       }
    }
 }
@@ -37,6 +43,7 @@
 }
 .block__text {
    width: 65%;
+   margin-top: 1rem;
    &--title {
       display: flex;
       align-items: center;
@@ -61,6 +68,18 @@
          font-size: 2rem;
          font-weight: 400;
          text-transform: uppercase;
+         @include tablet {
+            display: block;
+            width: 80%;
+            font-size: 1.8rem;
+         }
+         @include mobile {
+            font-size: 1.6rem;
+         }
+         @include mobile-sm {
+            width: 90%;
+            font-size: 1.4rem;
+         }
       }
    }
    &--text {
@@ -69,6 +88,16 @@
          font-family: $font;
          font-size: 1.7rem;
          font-weight: 400;
+         margin-top: 1rem;
+         &:last-child {
+            margin-top: 0;
+         }
+         @include mobile {
+            font-size: 1.5rem;
+         }
+         @include mobile-sm {
+            font-size: 1.3rem;
+         }
       }
    }
 }
@@ -80,31 +109,46 @@
       i {
          color: $red;
          font-size: 10rem;
+         @include mobile {
+            font-size: 8rem;
+         }
+         @include mobile-sm {
+            font-size: 6rem;
+         }
       }
    }
 }
 .obmin__line {
    text-align: center;
-   &--row{
+   &--row {
       padding: 2rem;
       border: 1px solid $red;
-      p{
+      p {
          font-size: 2rem;
          font-weight: 400;
          color: $black;
          font-family: $font;
+         @include tablet {
+            font-size: 1.8rem;
+         }
+         @include mobile {
+            font-size: 1.6rem;
+         }
       }
    }
 }
-.block__tex{
-   margin-top: 1rem;
-   p{
+.block__tex {
+   p {
       color: $black;
       font-family: $font;
       font-size: 1.7rem;
       font-weight: 400;
-      &:last-child{
-         margin-top: 1rem;
+      margin-top: 1rem;
+      @include mobile {
+         font-size: 1.5rem;
+      }
+      @include mobile-sm {
+         font-size: 1.3rem;
       }
    }
 }
