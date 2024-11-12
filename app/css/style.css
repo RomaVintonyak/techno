@@ -3549,6 +3549,12 @@ a:active {
     font-size: 2.5rem;
 }
 
+@media (max-width: 991px) {
+    .basket__title--row h2 {
+        font-size: 2rem;
+    }
+}
+
 .basket__product {
     margin-bottom: 2rem;
 }
@@ -3599,8 +3605,27 @@ a:active {
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .chart__block--content {
+        flex-wrap: wrap;
+    }
+}
+
 .tovar__img {
     width: 20%;
+}
+
+@media (max-width: 768px) {
+    .tovar__img {
+        width: 35%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__img {
+        width: 45%;
+    }
 }
 
 .tovar__opys {
@@ -3615,11 +3640,36 @@ a:active {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 576px) {
+    .tovar__opys h3 {
+        font-size: 1.5rem;
+    }
+}
+
 .tovar__opys--price {
     color: #f10e34;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.7rem;
+}
+
+@media (max-width: 576px) {
+    .tovar__opys--price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tovar__opys {
+        width: 35%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__opys {
+        width: 45%;
+    }
 }
 
 .chart__tovar--count {
@@ -3661,6 +3711,24 @@ a:active {
     color: #000000;
 }
 
+@media (max-width: 576px) {
+    .chart__tovar--count input {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .chart__tovar--count {
+        width: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    .chart__tovar--count {
+        width: 45%;
+    }
+}
+
 .chart__tovar-summ {
     width: 15%;
     text-align: center;
@@ -3668,6 +3736,19 @@ a:active {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+    .chart__tovar-summ {
+        width: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    .chart__tovar-summ {
+        width: 45%;
+        font-size: 1.5rem;
+    }
 }
 
 .basket__footer {
@@ -3695,6 +3776,13 @@ a:active {
     cursor: pointer;
 }
 
+@media (max-width: 576px) {
+    .reload__btn button {
+        padding: 0.4rem 0.6rem;
+        font-size: 1.5rem;
+    }
+}
+
 .total__summ {
     display: flex;
 }
@@ -3710,6 +3798,12 @@ a:active {
     font-size: 1.7rem;
 }
 
+@media (max-width: 576px) {
+    .total__summ--title p {
+        font-size: 1.5rem;
+    }
+}
+
 .total__summ--rezult span {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -3719,6 +3813,12 @@ a:active {
 
 .total__summ--rezult span:first-child {
     margin-right: 0.1rem;
+}
+
+@media (max-width: 576px) {
+    .total__summ--rezult span {
+        font-size: 1.5rem;
+    }
 }
 
 .basket__bye {
@@ -3742,6 +3842,13 @@ a:active {
     background-color: #f10e34;
     color: #ffffff;
     cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .basket__bye a {
+        padding: 0.4rem 0.6rem;
+        font-size: 1.5rem;
+    }
 }
 
 /*chackout page*/
