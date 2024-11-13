@@ -14,10 +14,19 @@
             color: $black;
             font-weight: 700;
             font-size: 2.5rem;
+            @include tablet {
+               font-size: 2rem;
+            }
+            @include mobile-xxsm {
+               font-size: 1.7rem;
+            }
          }
       }
       &--content {
          margin-bottom: 3rem;
+         @include tablet {
+            margin-bottom: 2rem;
+         }
       }
       &--footer {
          p {
@@ -25,6 +34,12 @@
             color: $black;
             font-weight: 700;
             font-size: 1.6rem;
+            @include mobile {
+               font-size: 1.5rem;
+            }
+            @include mobile-xxsm {
+               font-size: 1.3rem;
+            }
          }
       }
       &::after {
@@ -36,6 +51,9 @@
          left: 0;
          border: 1px solid $silver-l;
       }
+   }
+   @include tablet {
+      margin: 2rem auto;
    }
 }
 .order__block {
@@ -54,6 +72,15 @@
       color: $black;
       font-weight: 700;
       font-size: 1.6rem;
+      @include mobile {
+         font-size: 1.5rem;
+      }
+      @include mobile-xxsm {
+         font-size: 1.3rem;
+      }
+   }
+   @include tablet {
+      width: 100%;
    }
 }
 .back__index {
@@ -68,7 +95,10 @@
       font-size: 1.4rem;
       font-weight: 700;
       transition: color 0.2s linear, background-color 0.2s linear;
+
+      display: inline-block;
       &:hover {
+         cursor: pointer;
          background-color: $red;
          color: $white;
       }
