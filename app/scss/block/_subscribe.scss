@@ -45,10 +45,10 @@
       padding: 0.6rem 2rem;
       font-size: 1.5rem;
       font-family: $font;
-      color: $black-l;
+      color: $white;
       background-color: $red;
       transition: background-color 0.2s linear, color 0.2s linear;
-      &:hover{
+      &:hover {
          color: $red;
          background-color: $white;
       }
