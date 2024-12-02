@@ -4159,6 +4159,8 @@ a:active {
 
 .back__index {
     margin-top: 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .back__index a {

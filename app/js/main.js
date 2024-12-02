@@ -167,14 +167,14 @@ jQuery(document).ready(function () {
   /*back to cat menu*/
   var catBtn = $("#catBtn");
   $(window).on("load resize", function () {
-    if ($(window).width() >= 991) {
+    /*if ($(window).width() >= 991) {*/
       catBtn.on("click", function (event) {
         event.preventDefault();
         $("html, body").animate({
           scrollTop: headerHeight
         }, 1000, "swing");
       });
-    }
+    /*}*/
   });
   $(window).on("load resize", function () {
     if ($(window).width() <= 768) {

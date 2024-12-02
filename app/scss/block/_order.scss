@@ -85,6 +85,8 @@
 }
 .back__index {
    margin-top: 2rem;
+   position: relative;
+   z-index: 10;
    a {
       text-decoration: none;
       padding: 1.2rem 2.4rem;
